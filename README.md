@@ -29,7 +29,7 @@
     function move(direction)
         -- code for movement with direction param
     end
-    ```  
+    ```
 
 - [ ] **Level 3**  
     Focuses on showing how loops work. The puzzle could be a color game where they have to draw the same amount of blocks/sprite with a certain color using a loop.  
@@ -40,7 +40,7 @@
     for blue = 1,4 do
         create_blue_block()
     end
-    ```  
+    ```
     Logic code:
     ```Lua
     function create_blue_block()
@@ -53,11 +53,11 @@
             -- function for going to complete level screen
         end
     end
-    ```  
+    ```
 - [ ] **Level 4 and up**  
     These levels could focus on solving problems with the other tools in PICO-8 including the sprite sheet, map editor, and sfx.  
 
-    Example activities that could be done here:  
+    Example activities that could be done here:
     1. Choosing a character from the sprite sheet with a variable and [optional] quick customization of their character.
     2. Solving how to get through a certain part of the map with an unaccessible key/door by adding "solid" sprites.
     3. Finding where the key for the door is using 3 sfx sounds for 3 proximities such as "Near, Close, and On Top of the Key, `Press X`."  
