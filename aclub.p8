@@ -101,7 +101,7 @@ function game_draw()
 		p_draw()
 	else
 	
-		cprint('press', 64, 64, 07)
+		cprint('press')
 	end
 end
 
