@@ -5,18 +5,18 @@
 
 ***
 
-* []**Level 1**  
+- []**Level 1**  
     Focuses on introduction to programming with PICO-8 and variables. The section for varaibles should show the player that variables can contain strings, numbers, and boolean.  
 
     The varaibles could be done like so:
-    Variable Type | User Input
-    ------------- | -------------------
-    String | Name
-    Number | Age or Color Choice
-    Boolean | Game Start           
+    Variable Type | User Input 
+    ------------- | ---------- 
+    String | Name 
+    Number | Age or Color Choice 
+    Boolean | Game Start   
+  
 
-
-* []**Level 2**  
+- []**Level 2**  
     Focuses on functions and conditionals by having the character not move at the start and require the player to code the conditional statement for a keypress and call the function for movement.  
 
     The user editable code could be done like:
@@ -30,7 +30,7 @@
     end
     ```  
 
-* []**Level 3**  
+- []**Level 3**  
     Focuses on showing how loops work. The puzzle could be a color game where they have to draw the same amount of blocks/sprite with a certain color using a loop.  
 
     For example, let's have 4 blue blocks and the player also needs to draw the same color with the same amount using a loop. Here's some pseudocode...
@@ -53,7 +53,7 @@
         end
     end
     ```  
-* []**Level 4 and up**  
+- []**Level 4 and up**  
     These levels could focus on solving problems with the other tools in PICO-8 including the sprite sheet, map editor, and sfx.  
 
     Example activites that could be done here:  
