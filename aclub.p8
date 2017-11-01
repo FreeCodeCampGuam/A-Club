@@ -15,6 +15,7 @@ function _update()
 end
 
 function _draw()
+	cls()  --clears the screen
 	print(name, 64, 48, 7)
 end
 
