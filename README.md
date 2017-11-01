@@ -14,7 +14,7 @@
     | --- | --- | --- |
     | String | Name | `name = bob` |
     | Number | Age or Color Choice | `favorite_color = 00` |
-    | Boolean | Game Start | `start_game = false |
+    | Boolean | Game Start | `start_game = false` |
   
 
 - [ ] **Level 2**  
