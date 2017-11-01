@@ -34,10 +34,15 @@ p_update = _update
 p_draw = _draw
 
 function game_init()
+	-- load puzzle lvl reached
+	cartdata("fccg_aclubpuzzle_0")
+	__load_game()
+
+	menuitem(1, "reset puzzle", __reset_game)
+
 	name = false
 	p_init()
 	t = 0
-	lvl_reached = 1
 	_fireworks = {}
 end
 
@@ -70,7 +75,25 @@ function __next_lvl(lvlnum)
 	if __lvl > lvl_reached then
 		__fireworks()
 		lvl_reached = __lvl
+		__save_game()
 	end
+end
+
+function __load_game()
+	lvl_reached = dget(0)
+	if not lvl_reached or lvl_reached < 1 then
+		__reset_game()
+	end
+end
+
+function __save_game()
+	dset(0, lvl_reached)
+end
+
+function __reset_game()
+	lvl_reached = 1
+	dset(0, lvl_reached) 
+	load('aclub.p8')
 end
 
 _init = game_init
