@@ -67,8 +67,7 @@ function _update()
 end
 
 function _draw()
-	print(name, 
-							64-#name*2, 48+sin(t), 7)
+	print(name, 64, 48, 7)
 end
 
 --once you finish your changes
@@ -100,8 +99,7 @@ function game_draw()
 	if start then
 		p_draw()
 	else
-	
-		cprint('press')
+		print('press esc ', 64, 48, 7)
 	end
 end
 
@@ -109,9 +107,11 @@ _init = game_init
 _update = game_update
 _draw = game_draw
 
-function cprint(s, x, y, c)
-	if(c)return print(s,x-#s*2,y-2,c)
-	print(s,x-#s*2,y-2)
+oprint = print
+function print(s, x, y, c)
+	if(not y)return oprint(s)
+	if(c)return oprint(s,x-#s*2,y-2,c)
+	oprint(s,x-#s*2,y-2)
 end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
