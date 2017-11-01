@@ -1,65 +1,13 @@
 pico-8 cartridge // http://www.pico-8.com
 version 8
 __lua__
---this is a comment
---the computer ignores
---lines that start with --
-
---in most video games, code
---is separated into 3 parts
-
---1. the part at the beginning
---   where we set up stuff.
---in pico8, this is _init
-
---the rest of the code is run
---over and over, super fast!
---this is called the game loop.
---in pico8, this part is run
---30 times every second! 30fps
-
---the game loop is normally
---broken up into 
---2. a section that updates 
---			the game, _update in pico8
-
---3. and a section that draws
---   the game onto the screen,
---	  _draw in pico8
-
---you'll be adding things to
---these parts to make
---your own game!
-
--- _init: setting up your game
 function _init()
-
-	--this is a variable
 	t = 0
-	--it's just something that
-	--holds values...
-	--what it holds can vary!
-	--hence.. vary...able
-	--we'll use t to track
-	--how much time has passed
-	
-	--our t variable holds
-	--a number, but we can also
-	--hold strings of characters
-	--by surrounding them 
-	--in "quotes"
+
 	subtext = "welcome!"
 	
-	--variables can also hold
-	--true or false
 	start = false
 	
-	--start the game by making
-	--the above start variable
-	--true
-	--then press ctrl+r to reload
-	--the game and see what
-	--to do next
 end
 
 function _update()
