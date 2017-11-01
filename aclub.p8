@@ -61,6 +61,40 @@ function print(s, x, y, c)
 	if(c)return oprint(s,x-#s*2,y-2,c)
 	oprint(s,x-#s*2,y-2)
 end
+
+function __fireworks()
+	local amt=rnd(__lvl-1)+1
+	for i=1, amt do
+		local f = {
+			x=rnd(80)+24,
+			y=rnd(64)+20,
+			delay=rnd(10),
+			nks=rnd(20)+8,
+			t=0,
+			st=0,
+			r=rnd(30)+15,
+			s=0,
+			c=7+rnd(6),
+			update=function(f)
+				f.t+=1
+				if(f.t > f.delay)f.st+=1
+				if(f.st!=0)f.s=lerp(f.s,f.r,.25)
+				if(f.s>=f.r-.01)del(_fireworks,f)
+			end,
+			draw=function(f)
+				if(f.s==0)return
+				for i=1,f.nks do
+					pset(f.x+sin(i/f.nks)*f.s,
+						 f.y+cos(i/f.nks)*f.s,f.c)
+				end
+			end
+		}add(_fireworks, f)
+	end
+end
+
+function lerp(from,to,t)
+ return from+t*(to-from)
+end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
