@@ -36,18 +36,39 @@ function game_init()
 	name = false
 	p_init()
 	t = 0
+	lvl_reached = 1
+	_fireworks = {}
 end
 
 function game_update()
 	t += 1
+	__lvl = 1
+	if(start)__next_lvl(2)
 	p_update()
+	for _f in all(_fireworks) do
+		_f.update(_f)
+	end
 end
 
 function game_draw()
-	if start then
+	if __lvl != 1 then
 		p_draw()
 	else
-		print('press esc ', 64, 48, 7)
+		cls()
+		print('lvl 1', 64, 32, 11)
+		print('press esc twice', 64, 48, 7)
+		print('and start making your game!', 64, 57, 7)
+	end
+	for _f in all(_fireworks) do
+		_f.draw(_f)
+	end
+end
+
+function __next_lvl(lvlnum)
+	if(lvlnum == __lvl + 1)__lvl += 1
+	if __lvl > lvl_reached then
+		__fireworks()
+		lvl_reached = __lvl
 	end
 end
 
