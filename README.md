@@ -9,11 +9,11 @@
     Focuses on introduction to programming with PICO-8 and variables. The section for varaibles should show the player that variables can contain strings, numbers, and boolean.  
 
     The varaibles could be done like so:
-    Variable Type | User Input 
-    ------------- | ---------- 
-    String | Name 
-    Number | Age or Color Choice 
-    Boolean | Game Start   
+    | Variable Type | User Input | Example |
+    | --- | --- | --- |
+    | String | Name | `name = bob` |
+    | Number | Age or Color Choice | `favorite_color = 00` |
+    | Boolean | Game Start | `start_game = false |
   
 
 - [ ] **Level 2**  
