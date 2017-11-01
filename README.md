@@ -6,7 +6,15 @@
 ***
 
 * **Level 1**  
-    Focuses on introduction to programming with PICO-8 and variables.  
+    Focuses on introduction to programming with PICO-8 and variables. The section for varaibles should show the player that variables can contain strings, numbers, and boolean.  
+
+    The varaibles could be done like so:
+    | Variable Type | User Input          |
+    | ------------- | ------------------- |
+    | String        | Name                |
+    | Number        | Age or Color Choice |
+    | Boolean       | Game Start          |  
+
 
 * **Level 2**  
     Focuses on functions and conditionals by having the character not move at the start and require the player to code the conditional statement for a keypress and call the function for movement.  
@@ -44,4 +52,11 @@
             -- function for going to complete level screen
         end
     end
-    ```
+    ```  
+* **Level 4 and up**  
+    These levels could focus on solving problems with the other tools in PICO-8 including the sprite sheet, map editor, and sfx.  
+
+    Example activites that could be done here:  
+    1. Choosing a character from the sprite sheet with a variable and [optional] quick customization of their character.
+    2. Solving how to get through a certain part of the map with an unaccesible key/door by adding "solid" sprites.
+    3. Finding where the key for the door is using 3 sfx sounds for 3 proximities such as "Near, Close, and On Top of the Key, `Press X`."  
