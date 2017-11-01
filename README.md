@@ -21,7 +21,7 @@
     Focuses on functions and conditionals by having the character not move at the start and require the player to code the conditional statement for a key press and call the function for movement.  
 
     The user editable code could be done like:
-    ```Lua
+    ```lua
     if btn(0) then 
         move(left)
     end
@@ -36,13 +36,13 @@
 
     For example, let's have 4 blue blocks and the player also needs to draw the same color with the same amount using a loop. Here's some pseudocode...
     User editable code:
-    ```Lua
+    ```lua
     for blue = 1,4 do
         create_blue_block()
     end
     ```
     Logic code:
-    ```Lua
+    ```lua
     function create_blue_block()
         -- code for blue block drawing
         count_blue_block += 1
