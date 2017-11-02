@@ -10,15 +10,14 @@ The road ahead will be challenging and dangerous; take this guide with you!
 ##### Welcome! In this exercise you will be making a game at the same time learning about the basics of programming. What are you waiting for? Let's get to it!
 
 * **Introduction**  
-    To start making your game, you need to access the game editor.
-    You need to press <kbd>Esc</kbd> twice (<kbd>Esc</kbd>, <kbd>Esc</kbd>)  
+    To start making your game, you need to access the game editor. To do this, press <kbd>Esc</kbd> **twice**.
     
-    Once you are in the editor, you should see in the very first line: 
-    ```lua
-    --I am a comment
-    ```
+    You should see this at the top of your screen:  
+    ![image](https://user-images.githubusercontent.com/17536161/32310549-d306ebb2-bfde-11e7-9f03-1d329887805b.png)
+    
+    If you don't see `-- i am a comment` on the very first line, make sure to click the left-most symbol on the top-right of your screen ![image](https://user-images.githubusercontent.com/17536161/32310648-9d782258-bfdf-11e7-9eae-495276b19fa9.png). This is your **code editor**.
 
-    They are called comments. Computers don't read those, it's there to give notes to other programmers.  
+    Now back to `-- i am a comment`. These are called comments. Computers don't read those, they're there to give notes to other programmers.  
 
     In most video games, code is separated into three parts.  
     Let's start with the first one...
@@ -27,11 +26,12 @@ The road ahead will be challenging and dangerous; take this guide with you!
 
     end
     ```
-    This is where you set up stuff. Other parts of the code are ran over and over, they are what you call **Game Loops.**  
+    This is where you set up stuff. It's run only one time at the beginning of the game. 
+    The other two parts are ran over and over, they make up what's called the **Game Loop**.  
 
     Let's talk about that later, first we need to start the game but there's something preventing us to do just that.
 
-    > **_Tips:_** to **`run`** your game, use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd>  
+    > **_Tip:_** to **`reload`** your game, use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd>  
     
     This is a *variable*... 
     ```lua
