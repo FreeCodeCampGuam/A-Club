@@ -5,7 +5,7 @@
 
 ***
 
-- [ ] **Level 1**  
+- [X] **Level 1**  
     Focuses on introduction to programming with PICO-8 and variables. The section for variables should show the player that variables can contain strings, numbers, and boolean.  
 
     The variables could be done like so:  
