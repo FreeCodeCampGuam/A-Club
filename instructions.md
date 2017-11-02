@@ -56,5 +56,16 @@
 
 ***  
 
-* **Level 3**
+* **Level 3**  
     
+    Now our game runs and has a title. But, that title color doesn't feel right.   
+    Variables can also hold numbers and since PICO-8 has 16 colors [refer to cheatsheet]. We can choose another color and use that instead!
+    ```lua
+    t_color = 2
+    ```
+    After you are done editing, `**run**` the game again to see if it works.
+    Now, that looks fancy!  
+
+***  
+
+* **Level 4**
