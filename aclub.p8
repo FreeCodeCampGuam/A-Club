@@ -10,10 +10,10 @@ function _init()
 
 	-- level 2
 	title = "untitled"
-	t_color = 02
+	t_color = 2
 	
 	-- level 3
-	character = 00
+	character = 0
 	
 	
 end
