@@ -13,7 +13,8 @@ To start making your game, you need to access the game editor. To do this, press
 +++
 
 You should see this at the top  of your screen: 
-![image](https://cdn.discordapp.com/attachments/225825116888498176/375579230420860928/unknown.png)
+![image](https://cdn.discordapp.com/attachments/225825116888498176/375579230420860928/unknown.png). 
+If you don't see `-- i am a comment`, make sure the correct symbol and tab are selected like in the picture.
 
 +++
 
