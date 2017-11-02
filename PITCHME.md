@@ -30,7 +30,7 @@ These are called comments. Computers don't read those, they're there as notes fo
 
 In most video games, code has three parts. Let's start with the first one: |
 ```lua
-    function __init()
+    function _init()
 
     end
 ```
