@@ -113,7 +113,7 @@ function __fireworks()
 		local f = {
 			x=rnd(80)+24,
 			y=rnd(64)+20,
-			delay=rnd(10),
+			delay=rnd(30),
 			nks=rnd(20)+8,
 			t=0,
 			st=0,
