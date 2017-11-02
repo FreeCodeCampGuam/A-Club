@@ -66,10 +66,6 @@ The road ahead will be challenging and dangerous; take this guide with you!
     ```
     Got it? Let's **`run`** our game again.
     Nice!  
-
-***  
-
-* **Level 3**  
     
     Now our game runs and has a title. But, that title color doesn't feel right.   
     Variables can also hold numbers and since PICO-8 has 16 colors [refer to cheatsheet]. We can choose another color and use that instead!
@@ -81,7 +77,7 @@ The road ahead will be challenging and dangerous; take this guide with you!
 
 ***  
 
-* **Level 4**  
+* **Level 3**  
     
     In games, we have characters running around doing stuff. Let's get a character on to our game now too!  
     Choose a character and edit the character variable with the corresponding number of the character of your choice.
@@ -92,7 +88,7 @@ The road ahead will be challenging and dangerous; take this guide with you!
 
 ***
 
-* **Level 5**
+* **Level 4**
     We can fix that by adding adding a *conditional*. This is where you could do decision making inside your game.  
     Since this will be part of how your game works, we have to put it inside 
     ```lua
@@ -123,4 +119,4 @@ The road ahead will be challenging and dangerous; take this guide with you!
 
 ***  
 
-* **Level 6**
+* **Level 5**
