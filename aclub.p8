@@ -34,6 +34,48 @@ function _draw()
 	print(title, 64, 48, t_color)
 end
 -->8
+      --[[ cheatsheet ]-]-
+     
+       ----variables-----
+v = 5
+--can be named anything
+growl = 10 -- can hold numbers
+cost = 15.25 -- decimals too
+
+--strings of characters
+--must be surrounded by quotes
+name = "bob salas"
+name2 = 'single quotes work too'
+
+--a boolean is true or false
+hungry = true
+
+      ----conditionals----
+--booleans can be used to
+--control what your game does
+if hungry then
+ sfx(growl)
+else
+	print("i'm not hungry")
+end
+
+--sfx and print are functions
+--they do things for you
+
+--some functions return values
+
+--the btn function returns a
+--boolean when a btn is pressed
+--you use them just like any
+--other value or variable
+jumped = btn(”)
+if btn(”) then
+	print(name)
+end
+
+
+]]----------------------------[[
+
 
 
 
