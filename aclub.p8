@@ -42,12 +42,12 @@ function game_init()
 
 	name = false
 	p_init()
-	t = 0
+	__t = 0
 	_fireworks = {}
 end
 
 function game_update()
-	t += 1
+	__t += 1
 	__lvl = 1
 	if(start)__next_lvl(2)
 	p_update()
