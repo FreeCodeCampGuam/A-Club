@@ -34,9 +34,9 @@ In most video games, code has three parts. Let's start with the first one:
 
     end
 ``` 
-| This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.** |
+This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.** 
 
-| The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.** |
+The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.** 
 
 +++
 
@@ -177,7 +177,7 @@ This part of the code is part of the **Game Loop** that we talked about earlier 
 
 +++
 
-Now, let's male our character move.
+Now, let's make our character move.
 
 A basic conditional statement we could start with is the **if...then** How this works is kinda like...
 
@@ -188,11 +188,13 @@ if "I get A's" is True then "parents are happy!"
 
  ```
 
- +++
++++
 
- You can see in the example given that we have a *condition* and an *action*. If the **condition** is met, then the **action** is performed.
+You can see in the example given that we have a *condition* and an *action*. 
 
- +++
+If the **condition** is met, then the **action** is performed. 
+
++++
 
  To make our character move, we'll have to make a conditional that checks if a button [refer to cheatsheet] is pressed.
 
