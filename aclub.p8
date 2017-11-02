@@ -67,7 +67,9 @@ end
 --some functions return values
 
 --the btn function returns a
---boolean when a btn is pressed
+--boolean that tells you when
+--a button is pressed
+
 --you use them just like any
 --other value or variable
 jumped = btn(”)
