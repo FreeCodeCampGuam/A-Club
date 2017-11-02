@@ -90,6 +90,9 @@ The road ahead will be challenging and dangerous; take this guide with you!
     ```
     and we have a character! but wait... it doesn't move.  
 
+***
+
+* **Level 5**
     We can fix that by adding adding a *conditional*. This is where you could do decision making inside your game.  
     Since this will be part of how your game works, we have to put it inside 
     ```lua
@@ -120,4 +123,4 @@ The road ahead will be challenging and dangerous; take this guide with you!
 
 ***  
 
-* **Level 5**
+* **Level 6**
