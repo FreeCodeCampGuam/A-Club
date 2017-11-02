@@ -32,6 +32,7 @@
 
 .hljs {
 	background:#5F574F;
+	color:#C2C3C7;
 }
 
 /* Indigo */
@@ -57,9 +58,9 @@
 	color:#29ADFF;
 }
 
-/* Red */
+/* Pink */
 .hljs-keyword {
-	color:#FF004D;
+	color:#FF77A8;
 }
 
 /* Green */
