@@ -34,7 +34,7 @@ function _draw()
 	print(title, 64, 48, t_color)
 end
 -->8
-      --[[ cheatsheet ]-]-
+     --[-[ cheatsheet ]-]--
      
        ----variables-----
 v = 5
@@ -59,6 +59,8 @@ else
 	print("i'm not hungry")
 end
 
+
+
 --sfx and print are functions
 --they do things for you
 
@@ -74,7 +76,9 @@ if btn(”) then
 end
 
 
-]]----------------------------[[
+
+
+---]]----------------------[[---
 
 
 
