@@ -1,5 +1,5 @@
 pico-8 cartridge // http://www.pico-8.com
-version 8
+version 11
 __lua__
 -- i am a comment
 function _init()
@@ -15,9 +15,12 @@ function _init()
 	-- level 3
 	character = 0
 	
-	
 end
+--once you finish your changes
+--press ctrl+r to reload your
+--game.
 
+-->8
 function _update()
  t = t + .015
  
@@ -25,15 +28,34 @@ function _update()
  
  
 end
-
+-->8
 function _draw()
 	cls()  --clears the screen
 	print(title, 64, 48, t_color)
 end
+-->8
 
---once you finish your changes
---press ctrl+r to reload your
---game.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -------------------------------
 --do not edit code below this--
