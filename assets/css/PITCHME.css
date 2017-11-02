@@ -1,0 +1,8 @@
+@font-face {
+	font-family: PICO-8;
+	src: url(assets/PICO-8_mono_upper.ttf);
+}
+
+.reveal code {
+	font-family: PICO-8, monospace; 
+}
