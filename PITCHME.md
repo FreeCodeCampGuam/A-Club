@@ -28,15 +28,15 @@ These are called comments. Computers don't read those, they're there as notes fo
 
 +++
 
-In most video games, code has three parts. Let's start with the first one: |
+In most video games, code has three parts. Let's start with the first one: 
 ```lua
     function __init()
 
     end
 ``` 
-- This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.** 
+| This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.** |
 
-- The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.** 
+| The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.** |
 
 +++
 
@@ -217,4 +217,4 @@ You can tell a **function** to do something. In this case, you call the function
 
 ### Level 5
 
-> **_Tip:_** The **Game Loop** in PICO-8 runs 30 times per second!
+> **_Tip:_** My mama always said liveCoding's like a box of chocolates. You never know what you're gonna sound like.
