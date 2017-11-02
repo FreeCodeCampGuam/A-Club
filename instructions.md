@@ -48,7 +48,7 @@ The road ahead will be challenging and dangerous; take this guide with you!
     Our game is using the **`t`** variable to track how much time has passed. We'll leave that alone for now.
 
     Variables can also hold **booleans**. A boolean is just something that is `true` or `false`.  
-    Now let's make our game work! Something is watching the `start` variable and stopping our game from running. Let's change the **`start`** variable so that we can start the game. Right now it's `false`. Change it to the opposite of `false`!
+    Now let's make our game work! Something is watching the `start` variable and stopping our game from running. Let's change the **`start`** variable so that we can start the game. Right now it's `false`, so change it to the opposite of `false`!
 
     Once you've done that, reload your game with <kbd>Ctrl</kbd>+<kbd>R</kbd> and see if it worked!
     
