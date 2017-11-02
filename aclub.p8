@@ -443,10 +443,10 @@ end
 
 -- level 4 --
 function move(d)
-	if(d=="left") then
+	if(d==‹ or d=="left") then
 		char.dx -= 1
 	end
-	if(d=="right") then
+	if(d==‘ or d=="right") then
 		char.dx += 1
 	end
 end
