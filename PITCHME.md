@@ -8,7 +8,7 @@ The road ahead will be challenging and dangerous; take this guide with you!
 ### Introduction
 
 
-To start making your game, you need to access the game editor. To do this, press **Esc** twice. 
+To start making your game, you need to access the game editor. To do this, press <kbd>esc</kbd> twice. 
 
 +++
 
