@@ -401,13 +401,17 @@ function move(d)
 	end
 end
 
-function update_lvl4()
-	-- friction
+function update_lvl4()	
+	char.y += char.dy
+	char.x += char.dx
+	char.x = mid(0,121,char.x)
+	
+		-- friction
 	char.dx *= .8
 	-- gravity
 	char.dy += 1
 	
-	if char.y > 112 then
+	if char.y > 108 then
 		char.dy = 0
 	end
 end
