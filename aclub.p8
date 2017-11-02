@@ -43,6 +43,7 @@ function game_init()
 	name = false
 	p_init()
 	__t = 0
+	__lpit = 1
 	_fireworks = {}
 end
 
@@ -54,6 +55,7 @@ function game_update()
 	for _f in all(_fireworks) do
 		_f.update(_f)
 	end
+	__update_lpi()
 end
 
 function game_draw()
@@ -68,6 +70,7 @@ function game_draw()
 	for _f in all(_fireworks) do
 		_f.draw(_f)
 	end
+	__draw_lpi()
 end
 
 function __next_lvl(lvlnum)
@@ -76,6 +79,7 @@ function __next_lvl(lvlnum)
 		__fireworks()
 		lvl_reached = __lvl
 		__save_game()
+		__lvl_peek_in()
 	end
 end
 
@@ -99,6 +103,21 @@ end
 _init = game_init
 _update = game_update
 _draw = game_draw
+
+function __lvl_peek_in()
+	__lpit = 0
+end
+function __update_lpi()
+	__lpit += .01
+	__lpit = min(__lpit, 1)
+end
+function __draw_lpi()
+	draw_outline(function() 
+		print('lvl '..__lvl,
+			  64,-7 -cos(__lpit)*16,
+			  9+(__lvl+1)%7)
+	end, 0)
+end
 
 oprint = print
 function print(s, x, y, c)
@@ -139,6 +158,36 @@ end
 
 function lerp(from,to,t)
  return from+t*(to-from)
+end
+
+--trasevol_dog
+function draw_outline(draw,c,arg)
+ all_colors_to(c)
+ 
+ camera(-1,0)
+ draw(arg)
+ camera(1,0)
+ draw(arg)
+ camera(0,-1)
+ draw(arg)
+ camera(0,1)
+ draw(arg)
+ 
+ camera(0,0)
+ all_colors_to()
+ draw(arg)
+end
+
+function all_colors_to(c)
+ if c then
+  for i=0,15 do
+   pal(i,c)
+  end
+ else
+  for i=0,15 do
+   pal(i,i)
+  end
+ end
 end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
