@@ -106,9 +106,9 @@ end
 
 --you use them just like any
 --other value or variable
-jumped = btn(”)
+jumped = btn(ï¿½)
 
-if btn(”) and hungry then
+if btn(ï¿½) and hungry then
 	print(name)
 end
 
@@ -238,6 +238,9 @@ function game_init()
 	__t = 0
 	__lpit = 1
 	_fireworks = {}
+	
+	char = {x=64, y=64,
+							  dx=0, dy=0,}
 end
 
 function game_update()
@@ -251,6 +254,7 @@ function game_update()
 		_f.update(_f)
 	end
 	__update_lpi()
+	if(__lvl == 4)update_lvl4()
 end
 
 function game_draw()
@@ -266,6 +270,8 @@ function game_draw()
 		_f.draw(_f)
 	end
 	__draw_lpi()
+	
+	if(__lvl == 4)draw_lvl4()
 end
 
 function __next_lvl(lvlnum)
@@ -383,6 +389,30 @@ function all_colors_to(c)
    pal(i,i)
   end
  end
+end
+
+-- level 4 --
+function move(d)
+	if(d=="left") then
+		char.dx -= 1
+	if(d=="right") then
+		char.dx += 1
+end
+
+function update_lvl4()
+	-- friction
+	char.dx *= .8
+	-- gravity
+	char.dy += 1
+	
+	if char.y > 112 then
+		char.dy = 0
+	end
+end
+
+function draw_lvl4()
+	map(0,0, 0,0, 16,16)
+	spr(character, char.x, char.y)
 end
 __gfx__
 0000000000000000000000000000000000000000000000003b333b33000000009999499400000000999949949999499400000000000000000000000000000000
