@@ -3,6 +3,10 @@
 	src: url(assets/PICO-8_mono_upper.ttf);
 }
 
+.reveal strong, .reveal b {
+	font-weight: bolder; 
+}
+
 .reveal code {
 	font-family: PICO-8, monospace; 
 }
