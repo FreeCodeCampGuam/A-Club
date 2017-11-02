@@ -22,7 +22,7 @@ end
 
 -->8
 function _update()
- t = t + .015
+ t = t + .015  -- increase time
  
  -- level 3
  
