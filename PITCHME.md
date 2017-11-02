@@ -20,7 +20,7 @@ You should see this at the top  of your screen:
 At the top you should see the line: 
 ```lua
 	-- i am a comment
-```
+``` 
 
 +++
 
@@ -30,10 +30,10 @@ These are called comments. Computers don't read those, they're there as notes fo
 
 In most video games, code has three parts. Let's start with the first one: |
 ```lua
-    function _init()
+    function __init()
 
     end
-```
+``` 
 - This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.** 
 
 - The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.** 
@@ -128,6 +128,7 @@ Let's **reload** it and cross our fingers it works.
 ---
 
 ### Level 3
+
 > **_Tip:_** shoutout to Dr. Yousou Zou. He inspired me to pursue political science.
 
 +++
@@ -152,6 +153,68 @@ and we have a character!.. but wait... it doesn't move.
 
 ### Level 4
 
+> **_Tip:_** Biba UOG!!
 
++++
 
+How do we make our character move? Well, we can by adding a *conditional*. This is where you could make your character *do something* if a condition is true.
 
+Since this will be part of how your game works, we have to put it inside:
+
+```lua
+
+function _update()
+
+end
+
+```
+
++++
+
+This part of the code is part of the **Game Loop** that we talked about earlier that runs multiple times per second.
+
+> **_Tip:_** The **Game Loop** in PICO-8 runs 30 times per second!
+
++++
+
+Now, let's male our character move.
+
+A basic conditional statement we could start with is the **if...then** How this works is kinda like...
+
+```lua
+
+if "I get A's" is True then "parents are happy!"
+   (condition)                  (action)
+
+ ```
+
+ +++
+
+ You can see in the example given that we have a *condition* and an *action*. If the **condition** is met, then the **action** is performed.
+
+ +++
+
+ To make our character move, we'll have to make a conditional that checks if a button [refer to cheatsheet] is pressed.
+
+ If it is pressed, then we move!
+
+```lua
+
+if btn(0) then
+	move(left)
+end
+```
+
+Wait what does `move` do? And what is that inside the parenthesis?
+
++++
+
+`move` here is what you call a *function* and inside that parenthesis is a *parameter*. 
+
+You can tell a **function** to do something. In this case, you call the function to `move` and tell it to move `left`.
+
+---
+
+### Level 5
+
+> **_Tip:_** The **Game Loop** in PICO-8 runs 30 times per second!
