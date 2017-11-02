@@ -395,8 +395,10 @@ end
 function move(d)
 	if(d=="left") then
 		char.dx -= 1
+	end
 	if(d=="right") then
 		char.dx += 1
+	end
 end
 
 function update_lvl4()
