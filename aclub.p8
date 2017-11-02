@@ -59,8 +59,42 @@ else
 	print("i'm not hungry")
 end
 
+					-----operators------
+--you can use regular math
+--operators to change values
+growl = (growl + 1) / 2.5
+print(growl) -- 4.4
 
+--the asterisk(*) is multiply
+print(10 * 25) -- 250
 
+			  --logical operators-
+--there are even operators
+--that give booleans
+
+-- == returns true
+--if both sides are the same
+if growl == 4.4 then -- true
+	print(growl) -- 4.4
+end
+
+--you can also use..
+print(growl < 4) -- false
+print(growl > 4) -- true
+print(growl >= 4.4) -- true
+print(growl <= 4.4) -- true
+
+--you can even use and / or
+if hungry and growl > 4 then
+	sfx(growl)
+end
+
+--not reverses a boolean
+if not hungry then
+	growl = growl - 1
+end
+
+					-----functions------
 --sfx and print are functions
 --they do things for you
 
@@ -73,12 +107,51 @@ end
 --you use them just like any
 --other value or variable
 jumped = btn(”)
-if btn(”) then
+
+if btn(”) and hungry then
 	print(name)
 end
 
+				--your own functions--
+--you can make your own
+--functions too!
+function bark()
+	sfx(growl)
+	print('bark!')
+	hungry = not hungry
+end
+
+bark() -- bark!
+		
+					-----parameters-----			
+--you can add parameters to your
+--functions by putting variable
+--names into your function name
+function speak(sfx_number, msg)
+	sfx(sfx_number)
+	print(msg)
+end
+
+speak(growl, 'grrr') -- grrr
 
 
+					-------return-------	
+--you can also make your 
+--functions return values
+function can_speak()
+	if hungry then
+		return growl==10
+	end 
+	return false
+end
+
+hungry = true
+growl = 10
+print(can_speak()) -- true
+bark() -- bark!
+print(can_speak()) -- false
+
+					-------loops--------
 
 ---]]----------------------[[---
 
