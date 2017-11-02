@@ -1,5 +1,5 @@
 pico-8 cartridge // http://www.pico-8.com
-version 8
+version 11
 __lua__
 -- i am a comment
 function _init()
@@ -15,9 +15,12 @@ function _init()
 	-- level 3
 	character = 0
 	
-	
 end
+--once you finish your changes
+--press ctrl+r to reload your
+--game.
 
+-->8
 function _update()
  t = t + .015
  
@@ -25,15 +28,118 @@ function _update()
  
  
 end
-
+-->8
 function _draw()
 	cls()  --clears the screen
 	print(title, 64, 48, t_color)
 end
+-->8
+     --[-[ cheatsheet ]-]--
+     
+       ----variables-----
+t = 5
+--can be named anything
+growl = 10 -- can hold numbers
+cost = 15.25 -- decimals too
 
---once you finish your changes
---press ctrl+r to reload your
---game.
+--strings of characters
+--must be surrounded by quotes
+name = "bob salas"
+name2 = 'single quotes work too'
+
+--a boolean is true or false
+hungry = true
+
+      ----conditionals----
+--booleans can be used to
+--control what your game does
+if hungry then
+ sfx(growl)
+else
+	print("i'm not hungry")
+end
+
+
+
+--sfx and print are functions
+--they do things for you
+
+--some functions return values
+
+--the btn function returns a
+--boolean when a btn is pressed
+--you use them just like any
+--other value or variable
+jumped = btn(”)
+if btn(”) then
+	print(name)
+end
+
+
+
+
+---]]----------------------[[---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -------------------------------
 --do not edit code below this--
