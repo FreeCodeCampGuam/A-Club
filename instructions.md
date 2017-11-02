@@ -56,28 +56,31 @@ The road ahead will be challenging and dangerous; take this guide with you!
 
 * **Level 2**  
 
-    Awesome!
+    Awesome, looks like our game is working!  
     
-    Now that our game is working, we should name our game too!
-    Variables can also hold words or `strings`. In PICO-8 we need to enclose our strings with quotation marks `" "`.
-    Now, let's change the **`title`** variable to the name of your choice!
-    ```lua
-    title = "untitled"
-    ```
-    Got it? Let's **`run`** our game again.
-    Nice!  
+    Right now the title is just "untitled" and it's kind of an ugly color too 😕. Let's change that!  
     
-    Now our game runs and has a title. But, that title color doesn't feel right.   
-    Variables can also hold numbers and since PICO-8 has 16 colors [refer to cheatsheet]. We can choose another color and use that instead!
-    ```lua
-    t_color = 2
-    ```
-    After you are done editing, **`run`** the game again to see if it works.
-    Now, that looks fancy!  
+    Variables can also hold strings of letters and characters called... **strings**! In PICO-8, strings are surrounded with quotation marks `" "` to tell the computer that we want to use the "literal" characters between the quotes.  
+    
+    Look! In the code, there's a variable named `title` with the string `"untitled"` in it. Let's change that to a *cooler* name.
+    
+    Got it? Let's **`reload`** our game to see it in all its glory.
+
+    Oh wait, we forgot to change that ugly color!
+    
+    Variables can hold **strings** and **booleans**, but they can also hold **numbers**! Just like that `t` variable earlier.
+    
+    Notice, the `t_color` (title color) variable has a number in it. That's because PICO-8 only has 16 colors to choose from, and the number in `t_color` refers to one of those colors!
+
+    Check out the cheatsheet in front of you and let's change that to a color you like!
+    
+    Let's **reload** it an cross our fingers it works. 🤞
 
 ***  
 
 * **Level 3**  
+
+    Now that looks nice! 
     
     In games, we have characters running around doing stuff. Let's get a character on to our game now too!  
     Choose a character and edit the character variable with the corresponding number of the character of your choice.
