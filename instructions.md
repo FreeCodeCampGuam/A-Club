@@ -15,9 +15,13 @@ The road ahead will be challenging and dangerous; take this guide with you!
     You should see this at the top of your screen:  
     ![image](https://user-images.githubusercontent.com/17536161/32310549-d306ebb2-bfde-11e7-9f03-1d329887805b.png)
     
-    If you don't see `-- i am a comment` on the very first line, make sure to click the left-most symbol on the top-right of your screen ![image](https://user-images.githubusercontent.com/17536161/32310648-9d782258-bfdf-11e7-9eae-495276b19fa9.png). This is your **code editor**.
-
-    Now back to `-- i am a comment`. These are called comments. Computers don't read those, they're there to give notes to other programmers.  
+    You should see this on the very first line:
+    ```lua
+    -- i am a comment
+    ```
+    These are called comments. Computers don't read those, they're there to give notes to other programmers.  
+    
+    If you don't see `-- i am a comment` on the very first line, make sure to click the left-most symbol on the top-right of your screen ![image](https://user-images.githubusercontent.com/17536161/32310648-9d782258-bfdf-11e7-9eae-495276b19fa9.png). This is your **code editor**. 
 
     In most video games, code is separated into three parts.  
     Let's start with the first one...
