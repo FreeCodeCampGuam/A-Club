@@ -24,7 +24,7 @@ end
 function _update()
  t = t + .015
  
- -- level 4
+ -- level 3
  
  
 end
@@ -32,6 +32,9 @@ end
 function _draw()
 	cls()  --clears the screen
 	print(title, 64, 48, t_color)
+	
+	-- level 3
+	
 end
 -->8
     --[-[ cheatsheet ]-]--
