@@ -13,7 +13,7 @@ To start making your game, you need to access the game editor. To do this, press
 +++
 
 You should see this at the top  of your screen: 
-![image](https://user-images.githubusercontent.com/17536161/32310549-d306ebb2-bfde-11e7-9f03-1d329887805b.png)
+![image](https://cdn.discordapp.com/attachments/225825116888498176/375579230420860928/unknown.png)
 
 +++
 
