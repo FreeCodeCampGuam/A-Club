@@ -152,8 +152,58 @@ bark() -- bark!
 print(can_speak()) -- false
 
 					-------loops--------
+--loops let us execute code
+--multiple times
 
----]]----------------------[[---
+
+for n=1,10 do
+	print(n)
+end
+--this sets a variable named n
+--to be 1 at the start
+--of the loop, then it keeps
+--executing the code inside
+--the loop until n is larger
+--than the 2nd number
+--this ends up printing
+--the numbers 1 through 10
+
+
+---]]---------end----------[[---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
