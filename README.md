@@ -3,6 +3,8 @@
 
 #### The purpose of this game is to have a quick intro to 4 Core (Variables, Functions, Loops, and Conditionals) which will be used at the booth for A-club.
 
+(Instructions for the game can be found [here](https://gitpitch.com/FreeCodeCampGuam/A-Club) in our cool gitpitch slide!)
+
 ***
 
 - [X] **Level 1**  
