@@ -3,10 +3,13 @@ version 8
 __lua__
 function _init()
 	t = 0
-
-	subtext = "welcome!"
 	
 	start = false
+
+
+	title = "untitled"
+
+	t_color = 2
 	
 end
 
@@ -16,7 +19,7 @@ end
 
 function _draw()
 	cls()  --clears the screen
-	print(name, 64, 48, 7)
+	print(title, 64, 48, t_color)
 end
 
 --once you finish your changes
@@ -51,6 +54,7 @@ function game_update()
 	__t += 1
 	__lvl = 1
 	if(start)__next_lvl(2)
+	if(title!="untitled" and t_color!=2)__next_lvl(3)
 	p_update()
 	for _f in all(_fireworks) do
 		_f.update(_f)
