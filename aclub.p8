@@ -106,9 +106,9 @@ end
 
 --you use them just like any
 --other value or variable
-jumped = btn(ï¿½)
+jumped = btn(”)
 
-if btn(ï¿½) and hungry then
+if btn(”) and hungry then
 	print(name)
 end
 
