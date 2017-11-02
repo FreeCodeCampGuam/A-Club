@@ -1,4 +1,7 @@
-#Instructions on how to play the A-Club PICO-8 Puzzle
+# Instructions for your Game-Making Quest
+
+You are tasked with making your own video game!  
+The road ahead will be challenging and dangerous; take this guide with you!
 
 #### Follow the instructions carefully and do the steps one by one to ensure you are progressing correctly.
 
