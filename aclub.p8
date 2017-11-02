@@ -37,7 +37,7 @@ end
      --[-[ cheatsheet ]-]--
      
        ----variables-----
-v = 5
+t = 5
 --can be named anything
 growl = 10 -- can hold numbers
 cost = 15.25 -- decimals too
