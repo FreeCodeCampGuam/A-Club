@@ -38,3 +38,8 @@ In most video games, code has three parts. Let's start with the first one: |
 
 - The other two parts don't just run once, they run over and over again like a loop! They make up what's called the | **Game Loop.** 
 
++++
+
+Let's talk about that later, first we need to figure out how to start out game! |
+
+We'll need to change the code a bit to do that. :)
