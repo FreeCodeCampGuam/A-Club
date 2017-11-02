@@ -23,7 +23,7 @@ end
 function _update()
  t = t + .015
  
- -- level 5
+ -- level 4
  
  
 end
@@ -65,7 +65,8 @@ function game_update()
 	__t += 1
 	__lvl = 1
 	if(start)__next_lvl(2)
-	if(title!="untitled" and t_color!=2)__next_lvl(3)
+	if(title!="untitled" and	t_color!=2)__next_lvl(3)
+	if(character!=00)__next_lvl(4)
 	p_update()
 	for _f in all(_fireworks) do
 		_f.update(_f)
