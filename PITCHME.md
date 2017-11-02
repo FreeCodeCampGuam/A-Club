@@ -123,7 +123,34 @@ Check out the cheatsheet in front of you and let's change that to a color you li
 
 +++
 
-Let's **reload** it and cross our fingers it works. 🤞
+Let's **reload** it and cross our fingers it works. 
+
+---
+
+### Level 3
+> **_Tip:_** shoutout to Dr. Yousou Zou. He inspired me to pursue political science.
+
++++
+
+Now that looks nice!
+
+In games, we have characters running around doing stuff. Let's get a character on to our game now too!
+
++++
+
+Choose a character and change the character variable with the corresponding number of your chosen character.
+
+```lua
+
+character = 01
+
+```
+
+and we have a character!.. but wait... it doesn't move.
+
+---
+
+### Level 4
 
 
 
