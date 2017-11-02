@@ -30,14 +30,39 @@
 
 */
 
+.hljs {
+	background:#5F574F;
+}
+
+/* Indigo */
 .hljs-comment {
 	color:#83769C;
 }
 
-.hljs-keyword {
+/* White */
+.hljs-params {
 	color:#FFF1E8; 
 }
 
+/* Light-Grey */
+.hljs-title,
 .hjls-variable {
 	color:#C2C3C7;
+}
+
+/* Blue */
+.hljs-literal,
+.hljs-string,
+.hljs-number {
+	color:#29ADFF;
+}
+
+/* Red */
+.hljs-keyword {
+	color:#FF004D;
+}
+
+/* Green */
+.hljs-built_in {
+	color:#00E436;
 }
