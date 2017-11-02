@@ -5,7 +5,7 @@ __lua__
 function _init()
 	t = 0
 	
-	start = true
+	start = false
 
 	title = "untitled"
 
