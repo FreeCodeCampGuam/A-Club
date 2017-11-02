@@ -18,13 +18,19 @@
     They are called comments. Computers don't read those, it's there to give notes to other programmers.  
 
     In most video games, code is separated into three parts.  
-    Let's start with the first one, `__init` this is where you set up stuff. Other parts of the code are ran over and over, they are what you call **Game Loops.**  
+    Let's start with the first one...
+    ```lua
+    function __init()
+
+    end
+    ```
+    This is where you set up stuff. Other parts of the code are ran over and over, they are what you call **Game Loops.**  
 
     Let's talk about that later, first we need to start the game but there's something preventing us to do just that.
 
     > **_Tips:_** to **`run`** your game, use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd>  
     
-    This is a variable... 
+    This is a *variable*... 
     ```lua
     t = 0
     ```
@@ -70,4 +76,41 @@
 
 * **Level 4**  
     
-    In games, we have characters running around doing stuff. Let's get a character on to our game now too!
+    In games, we have characters running around doing stuff. Let's get a character on to our game now too!  
+    Choose a character and edit the character variable with the corresponding number of the character of your choice.
+    ```lua
+    character = 01 
+    ```
+    and we have a character! but wait... it doesn't move.  
+
+    We can fix that by adding adding a *conditional*. This is where you could do decision making inside your game.  
+    Since this will be part of how your game works, we have to put it inside 
+    ```lua
+    function __update()
+
+    end
+    ```
+    This part of the code is **Game Loop** that we talked about earlier that runs multiple times per second.
+    > **_Tips:_** The **Game Loop** in PICO-8 runs 30 times per second!  
+    
+    Now on the conditionals, let's make our character move~
+    A basic conditional statement we could start with is the **`if...then`**
+    How this works is kinda like...
+    ```lua
+    if "I get A's"  is True then "parents are happy!"
+       (conditional)             (action)
+    ```
+    You can see here we have a _conditional_ and an _action_ if the **condition** is met, hence condition...al :)  
+
+    To make our character move, we'll have to do a conditional that checks if a button [refer to cheatsheet] is pressed then we move.
+    ```lua
+    if btn(0) then
+        move(left)
+    end
+    ```
+    Wait, what does **`move`** do? And what is that inside the parenthesis??
+    **`move`** here is what you call a *function* and inside that parenthesis is a *parameter*. It's more code somewhere else and you can tell it to do something. In this instance you *call* the function **`move`** and tell it to do move **`left`**. 
+
+***  
+
+* **Level 5**
