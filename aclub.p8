@@ -34,9 +34,9 @@ function _draw()
 	print(title, 64, 48, t_color)
 end
 -->8
-     --[-[ cheatsheet ]-]--
+    --[-[ cheatsheet ]-]--
      
-       ----variables-----
+      ----variables-----
 t = 5
 --can be named anything
 growl = 10 -- can hold numbers
@@ -50,7 +50,7 @@ name2 = 'single quotes work too'
 --a boolean is true or false
 hungry = true
 
-      ----conditionals----
+     ----conditionals----
 --booleans can be used to
 --control what your game does
 if hungry then
