@@ -56,7 +56,7 @@ We'll need to change the code a bit to do that. :)
 t = 0
 ```
 
-That's a **variable.*
+That's a **variable.**
 
 It's just something that holds a value, like a box. What it holds can _vary_, hence vary..able! 
 
@@ -83,3 +83,48 @@ Let's change the `start` variable so we can start the game!
 Right now it's `false`, so change it to the opposite of `false`.
 
 Once you've done that, reload your game with Ctrl + R and see if it worked!
+
+---
+
+### Level 2
+
+> **_Tip:_** want to make someone's day? Shout "REGINALD!"
+
++++
+
+Awesome, looks like our game is working!
+
+Right now the title is just "untitled" and it's kind of an ugly color too 😕. Let's change that!
+
++++
+
+Variables can also hold strings of letters and characters called ... **strings**! In PICO-8, strings are surrounded with quotation marks " " 
+
+Look! In the code there's a variable named `title` with the string `"untitled"` in it. 
+
+Go ahead and change it to a *cooler* name.
+
++++
+
+Got it? Let's `reload` our game to see it in all its glory!
+
++++
+
+Oh wait, we forgot to change that ugly color!
+
+Variables can holds **strings** and **booleans**, but they can also hold **numbers**! Just like that `t` variable earlier.
+
++++
+
+Notice that the `t_color` variable has a number in it. That's because PICO-8 only has 16 colors to choose from and the number in t_color refers to one of those colors!
+
+
+Check out the cheatsheet in front of you and let's change that to a color you like!
+
++++
+
+Let's **reload** it and cross our fingers it works. 🤞
+
+
+
+
