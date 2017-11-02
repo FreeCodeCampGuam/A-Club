@@ -33,30 +33,30 @@ The road ahead will be challenging and dangerous; take this guide with you!
     This is where you set up stuff. It's run only one time at the beginning of the game. 
     The other two parts are ran over and over, they make up what's called the **Game Loop**.  
 
-    Let's talk about that later, first we need to start the game but there's something preventing us to do just that.
-
-    > **_Tip:_** to **`reload`** your game, use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd>  
-    
-    This is a *variable*... 
-    ```lua
-    t = 0
-    ```
-    it's just something that holds values. What it holds can vary, hence vary...able!
-    We'll use **`t`** to track how much time passed.  
+    Let's talk about that later, first we need to figure out how to start our game. We'll need to change the code a bit to do that.
 
 * **Level 1**  
 
-    Variables can also hold `True` or `False`
-    Now let's make our game work! Let's change the variable **`start`** to something that makes our game start. What's the opposite of `False`?
+    > **_Tip:_** to **`reload`** your game after making a change, use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd>  
+    
+    In your `__init`, you should see
     ```lua
-    start = true
+    t = 0
     ```
-    Yes! Good Job!
-    Now let's **`run`** our game!  
+    That's a **variable**.  
+    it's just something that holds a value. What it holds can vary, hence vary...able!  
+    Our game is using the **`t`** variable to track how much time has passed. We'll leave that alone for now.
 
+    Variables can also hold **booleans**. A boolean is just something that is `true` or `false`.  
+    Now let's make our game work! Something is watching the `start` variable and stopping our game from running. Let's change the **`start`** variable so that we can start the game. Right now it's `false`. Change it to the opposite of `false`!
+
+    Once you've done that, reload your game with <kbd>Ctrl</kbd>+<kbd>R</kbd> and see if it worked!
+    
 ***  
 
 * **Level 2**  
+
+    Awesome!
     
     Now that our game is working, we should name our game too!
     Variables can also hold words or `strings`. In PICO-8 we need to enclose our strings with quotation marks `" "`.
