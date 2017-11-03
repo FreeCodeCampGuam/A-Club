@@ -44,13 +44,12 @@ Variables can also hold **booleans**.
 
 A boolean is just something that is `true` or `false`.
 
-+++
-
 Now let's make our game work! 
 
-Something is watching the `start` variable that won't let our game start. 
++++?code=aclub.p8&lang=lua
 
-Let's change the `start` variable so we can start the game!
+@[9](Something is watching the `start` variable that won't let our game start. )
+@[9](Let's change the `start` variable so we can start the game!)
 
 +++
 
@@ -74,9 +73,10 @@ Right now the title is just "untitled" and it's kind of an ugly color too 😕. 
 
 Variables can also hold strings of letters and characters called ... **strings**! In PICO-8, strings are surrounded with quotation marks " " 
 
-Look! In the code there's a variable named `title` with the string `"untitled"` in it. 
++++?code=aclub.p8&lang=lua
 
-Go ahead and change it to a *cooler* name.
+@[12](Look! In the code there's a variable named `title` with the string `"untitled"` in it.)
+@[12](Go ahead and change it to a *cooler* name.)
 
 +++
 
@@ -88,12 +88,11 @@ Oh wait, we forgot to change that ugly color!
 
 Variables can holds **strings** and **booleans**, but they can also hold **numbers**! Just like that `t` variable earlier.
 
-+++
++++?code=aclub.p8&lang=lua
 
-Notice that the `t_color` variable has a number in it. That's because PICO-8 only has 16 colors to choose from and the number in t_color refers to one of those colors!
-
-
-Check out the cheatsheet in front of you and let's change that to a color you like!
+@[13](Notice that the `t_color` variable has a number in it.)
+@[13](That's because PICO-8 only has 16 colors to choose from and the number in `t_color` refers to one of those colors!)
+@[13](Check out the cheatsheet in front of you and let's change that to a color you like!)
 
 +++
 
