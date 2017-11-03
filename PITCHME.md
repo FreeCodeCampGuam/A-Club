@@ -150,20 +150,20 @@ In games, we have characters running around doing stuff. Let's get a character o
 
 +++
 
-To see the list of characters available, click this icon on the upper-right corner of your screen.
+To see the characters we have drawn, click the second icon on the top-right  
 
-![](assets/charlist.png)
+![](assets/icon.png)
 
-You should see the following screen after clicking the icon.
+This is the art screen, it should look like this
 
 ![](assets/editor.png)
 
 
 +++
 
-Now, you need to get the number of the character you want. 
+Now, let's choose a character!
 
-To do this, click on the character and then near the middle of the screen you should see its number like so
+Once you click one of them, you'll see the character number here
 
 ![](assets/value.png)
 
