@@ -24,7 +24,8 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[5](In most video games, code has three parts. Let's start with the first one.)
 @[5-18](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
 @[23-38](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
-@[23-38](Let's talk about that later, first we need to figure out how to start out game! We'll need to change the code a bit to do that.🙂)
+@[23-38](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂)
+@[]((Press right arrow key to go to the next slide.))
 
 ---
 
@@ -42,6 +43,7 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[9](The value of our `start` variable won't let our game start.)
 @[9](Right now it's `false`, so change it to the opposite of `false`.)
 @[9](Once you've done that, reload your game with <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if it worked!)
+@[]((Press right arrow key to go to the next slide.))
 
 ---
 
@@ -69,10 +71,9 @@ Variables can holds **strings** and **booleans**, but they can also hold **numbe
 @[13](Notice that the `t_color` variable has a number in it.)
 @[13](That's because PICO-8 only has 16 colors to choose from and the number in `t_color` refers to one of those colors!)
 @[13](Check out the cheatsheet in front of you and let's change that to a color you like!)
+@[](Let's **reload** it and cross our fingers it works. )
+@[]((Press right arrow key to go to the next slide.))
 
-+++
-
-Let's **reload** it and cross our fingers it works. 
 
 ---
 
