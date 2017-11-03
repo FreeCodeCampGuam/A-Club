@@ -333,6 +333,8 @@ end
 -- lvls ---
 
 -- level 4 --
+left = ‹
+right = ‘
 function move(d)
 	if(d==‹ or d=="left") then
 		char.dx = lerp(char.dx, -char.spd, char.acc)
