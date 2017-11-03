@@ -21,6 +21,7 @@ end
 --game.
 
 -->8
+-- ’update’ --
 function _update()
  t = t + .015  -- increase time
  
@@ -29,6 +30,7 @@ function _update()
  
 end
 -->8
+-- ’draw’ --
 function _draw()
 	cls()  --clears the screen
 	print(title, 64, 48, t_color)
@@ -36,7 +38,7 @@ function _draw()
 	-- level 3
 end
 -->8
-    --[-[ cheatsheet ]-]--
+    --[-[ cheatsheet ]-]-- 
      
       ----variables-----
 t = 5
