@@ -211,33 +211,33 @@ function _draw()
 	print(title, 64, 48, t_color)
 	
 	-- level 3
+	-- draw map here
+	-- draw player here
 end
 ```
-@[]
-
-
-How do we make our character move? Well, we can by adding a *conditional*. This is where you could make your character *do something* if a condition is true.
+@[6](Make sure to draw the map here using the `draw_map()` function.)
+@[6](All done? Let's reload our game using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see our map!)
 
 +++
 
+We have a problem, our character is just floating in the air. 
+
+That's because we haven't put physics into our game yet! We could use the `update_physics` function to do this.
+
+
++++
 ```lua
 function _update()
  t = t + .015  -- increase time
  
  -- level 3
+ -- update physics here
  
- 
-end
--->8
-function _draw()
-	cls()  --clears the screen
-	print(title, 64, 48, t_color)
-	
-	-- level 3
 end
 ```
-
-@[5-11](This part of the code is part of the **Game Loop** that we talked about earlier that runs multiple times per second.)
+@[1-7](Since we're *updating* the state of the game, we have to put `update_physics` inside **\_update()** which is on tab 1.)
+@[5](Make sure to update the physics here using the `update_physics()` function.)
+@[5](Got it? Let's reload our game using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see our character in motion!)
 
 +++
 
