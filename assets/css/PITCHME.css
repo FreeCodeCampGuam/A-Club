@@ -1,6 +1,12 @@
+/* Font source: https://www.lexaloffle.com/bbs/?tid=3760 
+   Font kit created with: https://www.fontsquirrel.com/tools/webfont-generator */
 @font-face {
-	font-family: PICO-8;
-	src: url(assets/PICO-8_mono_upper.ttf);
+    font-family: 'pico-8_mono_upperregular';
+    src: url('pico-8_mono_upper-webfont.woff2') format('woff2'),
+         url('pico-8_mono_upper-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .reveal strong, .reveal b {
@@ -8,7 +14,7 @@
 }
 
 .reveal code {
-	font-family: PICO-8, monospace; 
+	font-family: pico-8_mono_upperregular, monospace; 
 	font-size: 0.6em;
 	background: #5F574F;
     padding: 0.5em 0.4em 0.5em 0.4em;
