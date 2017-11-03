@@ -307,6 +307,10 @@ function game_init()
 	-- lvl4
 	__floor_missing = flr(2+rnd(4))
 	floor_missing = __floor_missing
+
+	__btn_pressed = false
+	__btn_drawn = false
+	__btn = {x=-64,y=112}
 end
 
 function game_update()
@@ -412,6 +416,18 @@ function reload_map()
 			mset(i,15,5)
 		end
 	end
+end
+
+-- level 4 --
+
+function draw_btn(x)
+	if(x==px)x=char.x
+	if(x==py)y=char.y
+	__btn_drawn = true
+	__btn.x = x
+	local sp = 38
+	if(__btn_pressed)sp=22
+	spr(sp, __btn.x-4, __btn.y)
 end
 
 -- helpers
