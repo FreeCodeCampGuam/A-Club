@@ -34,7 +34,6 @@ function _draw()
 	print(title, 64, 48, t_color)
 	
 	-- level 3
-	
 end
 -->8
     --[-[ cheatsheet ]-]--
