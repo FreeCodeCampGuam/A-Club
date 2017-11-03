@@ -24,7 +24,7 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[5](In most video games, code has three parts. Let's start with the first one.)
 @[5-18](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
 @[23-38](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
-@[24-38](Let's talk about that later, first we need to figure out how to start out game! We'll need to change the code a bit to do that.🙂)
+@[23-38](Let's talk about that later, first we need to figure out how to start out game! We'll need to change the code a bit to do that.🙂)
 
 ---
 
@@ -49,24 +49,14 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 
 > **_Tip:_** want to make someone's day? Shout "REGINALD!"
 
-+++
-
-Awesome, looks like our game is working!
-
-Right now the title is just "untitled" and it's kind of an ugly color too 😕. Let's change that!
-
-+++
-
-Variables can also hold strings of letters and characters called ... **strings**! In PICO-8, strings are surrounded with quotation marks " " 
-
 +++?code=aclub.p8&lang=lua
 
+@[](Awesome, looks like our game is working!)
+@[](Right now the title is just "untitled" and it's kind of an ugly color too 😕. Let's change that!)
+@[](Variables can also hold strings of letters and characters called ... **strings**! In PICO-8, strings are surrounded with quotation marks " ") 
 @[12](Look! In the code there's a variable named `title` with the string `"untitled"` in it.)
 @[12](Go ahead and change it to a *cooler* name.)
-
-+++
-
-Got it? Let's `reload` our game to see it in all its glory!
+@[]Got it? Let's `reload` our game to see it in all its glory!
 
 +++
 
