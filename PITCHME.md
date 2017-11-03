@@ -25,7 +25,7 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[5-18](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
 @[23-38](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
 @[23-38](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂)
-@[]((Press right arrow key to go to the next slide.))
+@[]((Press right arrow key to go to the next slide.)) 
 
 ---
 
@@ -38,8 +38,7 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[6](That's a **variable.**)
 @[6](It's just something that holds a value, like a box. What it holds can _vary_, hence vary..able!)
 @[6](Our game is using the `t` variable to track how much time has passed. We'll leave that alone for now.)
-@[9](Variables can also hold **booleans**.)
-@[9](A boolean is just something that is `true` or `false`.)
+@[9](Variables can also hold **booleans**. A boolean is just something that is `true` or `false`.)
 @[9](The value of our `start` variable won't let our game begin.)
 @[9](Right now it's `false`, so change it to the opposite of false.)
 @[9](Once you've done that, reload your game with <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if it worked!)
