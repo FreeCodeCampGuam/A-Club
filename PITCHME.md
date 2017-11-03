@@ -32,14 +32,12 @@ function _init()
 end
 
 
-
 function _update()
  	t = t + .015  -- increase time
  
  	-- level 3
 
 end
-
 
 
 function _draw()
@@ -79,7 +77,7 @@ function _init()
 ```
 @[3](That's a **variable.**)
 @[3](It's just something that holds a value, like a box. What it holds can _vary_, hence vary..able!)
-@[3](Our game is using the `t` variable to track how much time has passed. We'll leave that alone for now.)
+@[3](Our game is using the `t` variable to track how much time has passed. Right now, `t` contains 0. We'll leave that alone for now.)
 @[6](Variables can also hold **booleans**. A boolean is just something that is `true` or `false`.)
 @[6](The value of our `start` variable won't let our game begin.)
 @[6](Right now it's `false`, so change it to the opposite of false.)
@@ -133,7 +131,7 @@ Variables can hold **strings** and **booleans**, but they can also hold **number
 ```
 
 @[6](Notice that the `t_color` variable has a number in it.)
-@[6](That's because PICO-8 only has 16 colors to choose from and the number in `t_color` refers to one of those colors!)
+@[6](That number 2 is one of PICO-8's 16 colors to choose from.)
 @[6](Check out the cheatsheet in front of you and let's change that to a color you like!)
 @[6](Let's **reload** it using <kbd>Ctrl</kbd> + <kbd>R</kbd> and cross our fingers it works. )
 
@@ -152,6 +150,28 @@ In games, we have characters running around doing stuff. Let's get a character o
 
 +++
 
+To see the list of characters available, click this icon on the upper-right corner of your screen.
+
+![](assets/charlist.png)
+
+You should see the following screen
+
+![](assets/editor.png)
+
+
++++
+
+At the bottom are the characters you may use for your game. When you decide on your character, we will need to get its number or value. 
+
+We can get this near the middle of the screen:
+
+![](assets/value.png)
+
+The number indicated is the one we need. In the image above, the number of the character is 1.
+
+
++++
+
 ```lua
 	-- level 2
 	title = "untitled"
@@ -166,8 +186,8 @@ end
 --game.
 ```
 
-@[6](Choose a character and change the value of the character variable with the corresponding number of your chosen character.)
-@[6](Let's **reload** it using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see our changes.)
+@[6](Now, let's change the value of the character variable with the number of the character we chose.)
+@[6](Got it? Let's **reload** it using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see our changes.)
 @[6](and we have a character!.. but wait... it doesn't move.)
 
 +++
