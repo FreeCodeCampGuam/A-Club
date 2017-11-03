@@ -146,3 +146,41 @@ The road ahead will be challenging and dangerous; take this guide with you!
     Don't forget to fill in that parameter! That paremeter asks for where you want to put that swtich on, only between (1-15).
 
     Great! Now we have a switch but we can't do anything with it now can we? Let's add in another conditional to look for when you press an action key, say <kbd>Z</kbd> same thing you did with `move()` but this time with `hit_switch()` (assuming they did the move conditionals already, show the "correct answer" for move as reference with code-presenter).
+
+    Hmm... something looks wrong, there are holes on the ground. How will we get to the door?
+
+    Luckily, we're in a code editor. To solve that problem, we'll have to make our bridge.  
+
+    You've used **`functions`** before, this time we will have you make one!
+    
+    So this how you will have to structure your **`function`** 
+    ```lua
+    function insert_function_name_here()
+
+    end
+    ```
+    (Do fancy code-presenter here to explain what `function` is and what `inser_function_name_here` is. Remind them to not forget the parentheses.)
+    (another fancy code-presenter for `end` to show that all functions are enclosed like this)
+
+    Now you have constructed a "house" for your function, you gotta fill it with your code for bridge building.  
+
+    We'll give you some hints on how to do this.
+    First, we'll have to use **`loops`** this is different from **`Game Loops`** as you can control how often these loops run. For instance (heh) we could use a **`For...loop`** and here is how it is structured:
+
+    ```lua
+    for n =         1,       10   do
+        (variable)  (start) (stop)
+
+        draw_cat()
+        (action)
+    end
+    ```
+
+    (Code-presenter: explain what the for loop starts with something like "This sets a variable named `n` to be `1` at the **start** of the loop and continues executing the **action** where the code you want to run the amount of times until you tell it to **stop** at that number.")
+    (This will execute the code `draw_cat()` 10 times (1,2,3, ... ,10))
+    (**`Loops`**, in this case a **`For...loop`**, ends with... `end`!)
+
+    Now, let's really build that bridge. Here are some steps to follow:
+    1. Create a **`function`** for your bridge building shenanigans
+    2. Create a loop, (**_Hint:_** `For...loop`) that builds bridges for the amount of tiles the **floor is missing**.
+    3. **Add tiles** to fill in the floor by calling up another function. Don't forget to put this inside your **`For...loop`**!
