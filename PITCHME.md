@@ -23,8 +23,7 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[5](In most video games, code has three parts. Let's start with the first one which is **\_init()**)
 @[5-18](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
 @[23-38](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
-@[23-38](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂)
-@[]((Press right arrow key to go to the next slide.)) 
+@[23-38](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂) 
 
 +++
 
@@ -41,7 +40,6 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[9](The value of our `start` variable won't let our game begin.)
 @[9](Right now it's `false`, so change it to the opposite of false.)
 @[9](Once you've done that, reload your game with <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if it worked!)
-@[]((Press right arrow key to go to the next slide.))
 
 +++
 
@@ -69,8 +67,7 @@ Variables can hold **strings** and **booleans**, but they can also hold **number
 @[13](Notice that the `t_color` variable has a number in it.)
 @[13](That's because PICO-8 only has 16 colors to choose from and the number in `t_color` refers to one of those colors!)
 @[13](Check out the cheatsheet in front of you and let's change that to a color you like!)
-@[](Let's **reload** it and cross our fingers it works. )
-@[]((Press right arrow key to go to the next slide.))
+@[](Let's **reload** it using <kbd>Ctrl</kbd> + <kbd>R</kbd> and cross our fingers it works. )
 
 
 +++
@@ -92,15 +89,11 @@ In games, we have characters running around doing stuff. Let's get a character o
 
 +++
 
-> **_Tip:_** Biba UOG!!
-
-+++
-
 How do we make our character move? Well, we can by adding a *conditional*. This is where you could make your character *do something* if a condition is true.
 
 +++?code=aclub.p8&lang=lua
 
-@[24-30](Since this will be part of how your game works, we have to put it inside here.)
+@[24-30](Since this will be part of how your game works, we have to put it inside **\_update()**)
 @[24-30](This part of the code is part of the **Game Loop** that we talked about earlier that runs multiple times per second.)
 
 +++
@@ -128,10 +121,6 @@ If the **condition** is met, then the **action** is performed.
 
 +++
 
- To make our character move, we'll have to make a conditional that checks if a button [refer to cheatsheet] is pressed.
-
- If it is pressed, then we move!
-
 ```lua
 
 if btn(0) then
@@ -139,13 +128,12 @@ if btn(0) then
 end
 ```
 
-Wait what does `move` do? And what is that inside the parenthesis?
-
-+++
-
-`move` here is what you call a *function* and inside that parenthesis is a *parameter*. 
-
-You can tell a **function** to do something. In this case, you call the function to `move` and tell it to move `left`.
+@[1](To make our character move, we'll have to make a conditional that checks if a button is pressed.)
+@[2](If it is pressed,)
+@[3](then we move!)
+@[3](Wait what does `move` do? And what is that inside the parenthesis?)
+@[3]`move` here is what you call a *function* and inside that parenthesis is a *parameter*. 
+@[3]You can tell a **function** to do something. In this case, you call the function to `move` and tell it to move `left`.
 
 +++
 
