@@ -288,7 +288,6 @@ function game_init()
 	menuitem(1, "reset puzzle", __reset_game)
 
 	name = false
-	p_init()
 	__t = 0
 	__lpit = 1
 	_fireworks = {}
@@ -311,6 +310,8 @@ function game_init()
 	__btn_drawn = false
 	__btn = {x=-64,y=112,
 										hitt=0}
+
+	p_init()
 end
 
 function game_update()
@@ -355,6 +356,10 @@ function game_draw()
 	end
 	__draw_lpi()
 end
+
+_init = game_init
+_update = game_update
+_draw = game_draw
 
 -- lvls ---
 
@@ -484,9 +489,6 @@ function __reset_game()
 	load('aclub.p8')
 end
 
-_init = game_init
-_update = game_update
-_draw = game_draw
 
 function __lvl_peek_in()
 	__lpit = 0
