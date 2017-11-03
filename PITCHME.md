@@ -37,20 +37,11 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[6](That's a **variable.**)
 @[6](It's just something that holds a value, like a box. What it holds can _vary_, hence vary..able!)
 @[6](Our game is using the `t` variable from the previous slide to track how much time has passed. We'll leave that alone for now.)
-
-+++
-
-Variables can also hold **booleans**. 
-
-A boolean is just something that is `true` or `false`.
-
-+++
-
-Now let's make our game work! 
-
-Something is watching the `start` variable that won't let our game start. 
-
-Let's change the `start` variable so we can start the game!
+@[9](Variables can also hold **booleans**.)
+@[9](A boolean is just something that is `true` or `false`.)
+@[9](Now let's make our game work! )
+@[9](Something is watching the `start` variable that won't let our game start.)
+@[9](Let's change the `start` variable so we can start the game!)
 
 +++
 
