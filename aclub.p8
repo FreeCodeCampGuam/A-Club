@@ -432,6 +432,7 @@ function draw_switch(x)
 	spr(sp, __btn.x-4, __btn.y)
 end
 
+z=4
 function hit_switch()
 	if(__box(char, __btn))__btn_pressed=true
 	if(__btn.hitt!=0)return
