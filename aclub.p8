@@ -443,16 +443,19 @@ end
 
 z=4
 function hit_switch()
-	if(__box(char, __btn))__btn_pressed=true
+	if __box(char, __btn) then
+		__btn_pressed=true
+		mset(15,12,24)
+		mset(15,13,11)
+		if __door_broke then
+			mset(15,14,43)
+		else
+			mset(15,14,27)			
+		end
+	end
 	if(__btn.hitt!=0)return
 	__btn.hitt = 8
 	__spark()
-	mset(15,13,11)
-	if __door_broke then
-		mset(15,14,43)
-	else
-		mset(15,14,27)
-	end
 end
 
 function __spark()
