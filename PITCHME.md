@@ -16,34 +16,15 @@ You should see this at the top  of your screen:
 ![image](https://cdn.discordapp.com/attachments/225825116888498176/375579230420860928/unknown.png). 
 If you don't see `-- i am a comment`, make sure the correct symbol and tab are selected like in the picture.
 
-+++
++++?code=aclub.p8&lang=lua
 
-At the top you should see the line: 
-```lua
-	-- i am a comment
-``` 
+@[4](At the top you should see this line)
+@[4](These are called **Comments**. Computers don't read those, they're there as notes for the programmer.)
 
-+++
-
-These are called comments. Computers don't read those, they're there as notes for the programmer 
-
-+++
-
-In most video games, code has three parts. Let's start with the first one: 
-```lua
-    function __init()
-
-    end
-``` 
-This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.** 
-
-The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.** 
-
-+++
-
-Let's talk about that later, first we need to figure out how to start out game! 
-
-We'll need to change the code a bit to do that. :)
+@[5](In most video games, code has three parts. Let's start with the first one.)
+@[5-18](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
+@[24-38](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
+@[24-38](Let's talk about that later, first we need to figure out how to start out game! We'll need to change the code a bit to do that.🙂)
 
 ---
 
@@ -51,19 +32,11 @@ We'll need to change the code a bit to do that. :)
 
 > **_Tip:_** to reload your game after making a change, use the keyboard shortcut Ctrl + R
 
-+++
++++?code=aclub.p8&lang=lua
 
-```lua
-t = 0
-```
-
-That's a **variable.**
-
-It's just something that holds a value, like a box. What it holds can _vary_, hence vary..able! 
-
-+++
-
-Our game is using the `t` variable from the previous slide to track how much time has passed. We'll leave that alone for now.
+@[6](That's a **variable.**)
+@[6](It's just something that holds a value, like a box. What it holds can _vary_, hence vary..able!)
+@[6](Our game is using the `t` variable from the previous slide to track how much time has passed. We'll leave that alone for now.)
 
 +++
 
@@ -138,17 +111,10 @@ Now that looks nice!
 
 In games, we have characters running around doing stuff. Let's get a character on to our game now too!
 
-+++
++++?code=aclub.p8&lang=lua
 
-Choose a character and change the character variable with the corresponding number of your chosen character.
-
-```lua
-
-character = 01
-
-```
-
-and we have a character!.. but wait... it doesn't move.
+@[16](Choose a character and change the character variable with the corresponding number of your chosen character.)
+@[16](and we have a character!.. but wait... it doesn't move.)
 
 ---
 
@@ -160,19 +126,12 @@ and we have a character!.. but wait... it doesn't move.
 
 How do we make our character move? Well, we can by adding a *conditional*. This is where you could make your character *do something* if a condition is true.
 
-Since this will be part of how your game works, we have to put it inside:
++++?code=aclub.p8&lang=lua
 
-```lua
-
-function _update()
-
-end
-
-```
+@[24-30](Since this will be part of how your game works, we have to put it inside here.)
+@[24-30](This part of the code is part of the **Game Loop** that we talked about earlier that runs multiple times per second.)
 
 +++
-
-This part of the code is part of the **Game Loop** that we talked about earlier that runs multiple times per second.
 
 > **_Tip:_** The **Game Loop** in PICO-8 runs 30 times per second!
 
