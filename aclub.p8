@@ -419,7 +419,7 @@ end
 
 -- level 4 --
 
-function draw_btn(x)
+function draw_switch(x)
 	if(x==px)x=char.x
 	if(x==py)y=char.y
 	__btn_drawn = true
