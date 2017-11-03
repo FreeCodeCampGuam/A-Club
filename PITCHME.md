@@ -16,7 +16,7 @@ You should see this at the top  of your screen:
 ![image](https://cdn.discordapp.com/attachments/225825116888498176/375579230420860928/unknown.png). 
 If you don't see `-- i am a comment`, make sure the correct symbol and tab are selected like in the picture.
 
-+++?code=aclub.p8 lang=lua
++++?code=aclub.p8&lang=lua
 
 @[4](At the top you should see this line)
 @[4](These are called comments. Computers don't read those, they're there as notes for the programmer.)
@@ -38,7 +38,7 @@ We'll need to change the code a bit to do that. :)
 
 > **_Tip:_** to reload your game after making a change, use the keyboard shortcut Ctrl + R
 
-+++code=aclub.p8 lang=lua
++++?code=aclub.p8&lang=lua
 
 @[6](That's a **variable.**
 
