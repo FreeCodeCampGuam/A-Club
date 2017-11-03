@@ -39,14 +39,9 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[6](Our game is using the `t` variable from the previous slide to track how much time has passed. We'll leave that alone for now.)
 @[9](Variables can also hold **booleans**.)
 @[9](A boolean is just something that is `true` or `false`.)
-@[9](Now let's make our game work! )
-@[9](Something is watching the `start` variable that won't let our game start.)
+@[9](The value of our `start` variable won't let our game start.)
 @[9](Right now it's `false`, so change it to the opposite of `false`.)
-@[9](Let's change the `start` variable so we can start the game!)
-
-+++
-
-Once you've done that, reload your game with <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if it worked!
+@[9](Once you've done that, reload your game with <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if it worked!)
 
 ---
 
