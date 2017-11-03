@@ -16,14 +16,45 @@ You should see this at the top  of your screen:
 ![image](https://cdn.discordapp.com/attachments/225825116888498176/375579230420860928/unknown.png). 
 If you don't see `-- i am a comment`, make sure the correct symbol and tab are selected like in the picture.
 
-+++?code=aclub.p8&lang=lua
++++
+```lua
+-- i am a comment
+function _init()
+	t = 0
+	
+	-- level 1
+	start = false
 
-@[4](At the top you should see this line)
-@[4](These are called **Comments**. Computers don't read those, they're there as notes for the programmer.)
-@[5](In most video games, code has three parts. Let's start with the first one which is **\_init()**)
-@[5-18](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
-@[23-38](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
-@[23-38](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂) 
+	-- level 2
+	title = "untitled"
+	t_color = 2
+end
+
+
+
+function _update()
+ 	t = t + .015  -- increase time
+ 
+ 	-- level 3
+
+end
+
+
+
+function _draw()
+	cls()  --clears the screen
+	print(title, 64, 48, t_color)
+	
+	-- level 3
+
+end
+```
+@[1](At the top you should see this line)
+@[1](These are called **Comments**. Computers don't read those, they're there as notes for the programmer.)
+@[2-11](In most video games, code has three parts. Let's start with the first one which is **\_init()**)
+@[2-11](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
+@[15-30](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
+@[15-30](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂) 
 
 +++
 
@@ -31,15 +62,26 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 
 > **_Tip:_** to reload your game after making a change, use the keyboard shortcut <kbd>Ctrl</kbd> + <kbd>R</kbd>
 
-+++?code=aclub.p8&lang=lua
++++
+```lua
+-- i am a comment
+function _init()
+	t = 0
+	
+	-- level 1
+	start = false
 
-@[6](That's a **variable.**)
-@[6](It's just something that holds a value, like a box. What it holds can _vary_, hence vary..able!)
-@[6](Our game is using the `t` variable to track how much time has passed. We'll leave that alone for now.)
-@[9](Variables can also hold **booleans**. A boolean is just something that is `true` or `false`.)
-@[9](The value of our `start` variable won't let our game begin.)
-@[9](Right now it's `false`, so change it to the opposite of false.)
-@[9](Once you've done that, reload your game with <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if it worked!)
+	-- level 2
+	title = "untitled"
+	t_color = 2
+```
+@[3](That's a **variable.**)
+@[3](It's just something that holds a value, like a box. What it holds can _vary_, hence vary..able!)
+@[3](Our game is using the `t` variable to track how much time has passed. We'll leave that alone for now.)
+@[6](Variables can also hold **booleans**. A boolean is just something that is `true` or `false`.)
+@[6](The value of our `start` variable won't let our game begin.)
+@[6](Right now it's `false`, so change it to the opposite of false.)
+@[6](Once you've done that, reload your game with <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if it worked!)
 
 +++
 
@@ -47,14 +89,25 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 
 > **_Tip:_** want to make someone's day? Shout "REGINALD!"
 
-+++?code=aclub.p8&lang=lua
++++
+```lua
+-- i am a comment
+function _init()
+	t = 0
+	
+	-- level 1
+	start = false
 
-@[7](Awesome, looks like our game is working!)
-@[7](Right now the title is just "untitled" and it's kind of an ugly color too 😕. Let's change that!)
-@[7](Variables can also hold strings of letters and characters called ... **strings**! In PICO-8, strings are surrounded with quotation marks " ") 
-@[12](Look! In the code there's a variable named `title` with the string `"untitled"` in it.)
-@[12](Go ahead and change it to a *cooler* name.)
-@[12](Got it? Let's reload our game using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see it in all its glory!)
+	-- level 2
+	title = "untitled"
+	t_color = 2
+```
+@[4](Awesome, looks like our game is working!)
+@[4](Right now the title is just "untitled" and it's kind of an ugly color too 😕. Let's change that!)
+@[4](Variables can also hold strings of letters and characters called ... **strings**! In PICO-8, strings are surrounded with quotation marks " ") 
+@[9](Look! In the code there's a variable named `title` with the string `"untitled"` in it.)
+@[9](Go ahead and change it to a *cooler* name.)
+@[9](Got it? Let's reload our game using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see it in all its glory!)
 
 +++
 
@@ -62,12 +115,23 @@ Oh wait, we forgot to change that ugly color!
 
 Variables can hold **strings** and **booleans**, but they can also hold **numbers**! Just like that `t` variable earlier.
 
-+++?code=aclub.p8&lang=lua
++++
+```lua
+	-- level 1
+	start = false
 
-@[13](Notice that the `t_color` variable has a number in it.)
-@[13](That's because PICO-8 only has 16 colors to choose from and the number in `t_color` refers to one of those colors!)
-@[13](Check out the cheatsheet in front of you and let's change that to a color you like!)
-@[](Let's **reload** it using <kbd>Ctrl</kbd> + <kbd>R</kbd> and cross our fingers it works. )
+	-- level 2
+	title = "untitled"
+	t_color = 2
+	
+	-- level 3
+	character = 0
+```
+
+@[6](Notice that the `t_color` variable has a number in it.)
+@[6](That's because PICO-8 only has 16 colors to choose from and the number in `t_color` refers to one of those colors!)
+@[6](Check out the cheatsheet in front of you and let's change that to a color you like!)
+@[6](Let's **reload** it using <kbd>Ctrl</kbd> + <kbd>R</kbd> and cross our fingers it works. )
 
 
 +++
@@ -82,19 +146,45 @@ Now that looks nice!
 
 In games, we have characters running around doing stuff. Let's get a character on to our game now too!
 
-+++?code=aclub.p8&lang=lua
++++
+```lua
+	-- level 2
+	title = "untitled"
+	t_color = 2
+	
+	-- level 3
+	character = 0
+	
+end
+--once you finish your changes
+--press ctrl+r to reload your
+--game.
+```
 
-@[16](Choose a character and change the character variable with the corresponding number of your chosen character.)
-@[16](and we have a character!.. but wait... it doesn't move.)
+@[6](Choose a character and change the value of the character variable with the corresponding number of your chosen character.)
+@[6](Let's **reload** it using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see our changes.)
+@[6](and we have a character!.. but wait... it doesn't move.)
 
 +++
 
 How do we make our character move? Well, we can by adding a *conditional*. This is where you could make your character *do something* if a condition is true.
 
-+++?code=aclub.p8&lang=lua
++++
+```lua
+--press ctrl+r to reload your
+--game.
 
-@[24-30](Since this will be part of how your game works, we have to put it inside **\_update()**)
-@[24-30](This part of the code is part of the **Game Loop** that we talked about earlier that runs multiple times per second.)
+-->8
+function _update()
+ t = t + .015  -- increase time
+ 
+ -- level 3
+ 
+
+end
+```
+@[5-11](Since this will be part of how your game works, we have to put it inside **\_update()**)
+@[5-11](This part of the code is part of the **Game Loop** that we talked about earlier that runs multiple times per second.)
 
 +++
 
@@ -117,23 +207,22 @@ if "I get A's" is True then "parents are happy!"
 
 You can see in the example given that we have a *condition* and an *action*. 
 
-If the **condition** is met, then the **action** is performed. 
+If the **condition** is met, then the **action** happens. 
 
 +++
 
 ```lua
 
-if btn(0) then
+if btn(left) then
 	move(left)
 end
 ```
-
 @[1](To make our character move, we'll have to make a conditional that checks if a button is pressed.)
 @[2](If it is pressed,)
 @[3](then we move!)
 @[3](Wait what does `move` do? And what is that inside the parenthesis?)
-@[3]`move` here is what you call a *function* and inside that parenthesis is a *parameter*. 
-@[3]You can tell a **function** to do something. In this case, you call the function to `move` and tell it to move `left`.
+@[3](`move` here is what you call a *function* and inside that parenthesis is a *parameter*.)
+@[3](You can tell a **function** to do something. In this case, you call the function to `move` and tell it to move `left`.)
 
 +++
 
