@@ -318,6 +318,8 @@ function game_init()
 	__passed_tile_test = false
 	__num_tiles = 0
 
+	__door_broke = false
+
 	p_init()
 end
 
@@ -445,6 +447,12 @@ function hit_switch()
 	if(__btn.hitt!=0)return
 	__btn.hitt = 8
 	__spark()
+	mset(15,13,11)
+	if __door_broke then
+		mset(15,14,43)
+	else
+		mset(15,14,27)
+	end
 end
 
 function __spark()
@@ -482,6 +490,11 @@ if o__build_bridge then
 		floor_missing = __floor_missing
 		__num_tiles = 0
 		o__build_bridge()
+
+		if __passed_tile_test and 
+					__num_tiles >= __floor_missing
+			__door_broke = true
+		end
 	end
 else
 	function build_bridge()
