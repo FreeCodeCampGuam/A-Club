@@ -292,9 +292,13 @@ function game_init()
 	__lpit = 1
 	_fireworks = {}
 	
+	-- lvl3
 	char = {x=64, y=64,
 							  dx=0, dy=0,
 							  spd=3,acc=.3}
+	_map_drawn = false
+	btn_checked = false
+	char_moved = false
 end
 
 function game_update()
@@ -302,10 +306,15 @@ function game_update()
 	__lvl = 1
 	if(start)__next_lvl(2)
 	if(title!="untitled" and t_color!=2)__next_lvl(3)
-	if(character!=0)__next_lvl(4)
+	-- lots to do for lvl3
+	-- ramp up difficulty
+	-- and begin intrinsic reward
+	-- as opposed to only lvl up reward
+	if character!=0 and _map_drawn and 
+				btn_checked and char_moved then
+		__next_lvl(4)
+	end
 	p_update()
-
-	if(__lvl == 4)update_lvl4()
 
 	for _f in all(_fireworks) do
 		_f.update(_f)
@@ -323,8 +332,6 @@ function game_draw()
 		print('and start making your game!', 64, 57, 7)
 	end
 
-	if(__lvl == 4)draw_lvl4()
-
 	for _f in all(_fireworks) do
 		_f.draw(_f)
 	end
@@ -337,6 +344,7 @@ end
 left = ‹
 right = ‘
 function move(d)
+	char_moved = true
 	if(d==‹ or d=="left") then
 		char.dx = lerp(char.dx, -char.spd, char.acc)
 	end
@@ -345,7 +353,9 @@ function move(d)
 	end
 end
 
-function update_lvl4()	
+function update_player()
+	if(character==0)return
+
 	char.y += char.dy
 	if map_collide(char) then
 		char.y -= char.dy
@@ -361,14 +371,17 @@ function update_lvl4()
 	char.dx *= .8
 	-- gravity
 	char.dy += 1
-	
 end
 
-function draw_lvl4()
-	map(0,0, 0,0, 16,16)
+function draw_player()
+	if(character==0)return
 	spr(character, char.x, char.y)
 end
 
+function draw_map()
+	_map_drawn = true
+	map(0,0, 0,0, 16,16)
+end
 
 -- helpers
 
@@ -423,6 +436,13 @@ function print(s, x, y, c)
 	if(not y)return oprint(s)
 	if(c)return oprint(s,x-#s*2,y-2,c)
 	oprint(s,x-#s*2,y-2)
+end
+
+-- override btn to track checks
+obtn = btn
+function btn(d)
+	btn_checked = true
+	return obtn(d)
 end
 
 function __fireworks()
