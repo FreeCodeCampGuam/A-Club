@@ -16,12 +16,9 @@ You should see this at the top  of your screen:
 ![image](https://cdn.discordapp.com/attachments/225825116888498176/375579230420860928/unknown.png). 
 If you don't see `-- i am a comment`, make sure the correct symbol and tab are selected like in the picture.
 
-+++
++++?code=aclub.p8&lang=lua
 
-At the top you should see the line: 
-```lua
-	-- i am a comment
-``` 
+@[4]At the top you should see this line
 
 +++
 
