@@ -433,10 +433,10 @@ function draw_switch(x)
 end
 
 function hit_switch()
+	if(__box(char, __btn))__btn_pressed=true
 	if(__btn.hitt!=0)return
 	__btn.hitt = 4
 	__spark()
-	if(__box(char, __btn))__btn_pressed=true
 end
 
 function __spark()
