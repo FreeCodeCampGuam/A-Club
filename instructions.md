@@ -1,4 +1,4 @@
-# Instructions for your Game-Making Quest
+__#__ Instructions for your Game-Making Quest
 
 You are tasked with making your own video game!  
 The road ahead will be challenging and dangerous; take this guide with you!
@@ -89,9 +89,6 @@ The road ahead will be challenging and dangerous; take this guide with you!
     ```
     and we have a character! but wait... it doesn't move.  
 
-***
-
-* **Level 4**
     We can fix that by adding adding a *conditional*. This is where you could do decision making inside your game.  
     Since this will be part of how your game works, we have to put it inside 
     ```lua
@@ -119,7 +116,30 @@ The road ahead will be challenging and dangerous; take this guide with you!
     ```
     Wait, what does **`move`** do? And what is that inside the parenthesis??
     **`move`** here is what you call a *function* and inside that parenthesis is a *parameter*. It's more code somewhere else and you can tell it to do something. In this instance you *call* the function **`move`** and tell it to do move **`left`**. 
+    
+    Now let's do the same for **`right`**, same thing as doing it for left but going right this time.
+
+    Alright, so we got some movement logic down, let's move on over to drawing stuff. For that we go to 
+    ```lua
+    function _draw()
+
+    end
+    ```
+
+    First, we gotta draw the map, we can do so by calling the function `draw_map()`
+    Hmm... where is our character? Oh right, we have not called the function for that one either. Let's do it by doing `draw_player()`
+
+    Now, try it out by reloading!
+
+    Oh no! It doesn't work, we must be forgetting something...
+    Ah right, `draw_player()` needs parameters too like our cool friend `move()` but this time it is structured like this `draw_player(px, py)`  
+
+    You don't write in `px` and `py`, you replace them with where you want to place your player character when it's drawn! Refer to the cheatsheet for details on how to use PICO-8's coordinate plane (or have it on screen)
+    
 
 ***  
 
-* **Level 5**
+* **Level 4**  
+
+   Hold on, what if you want to interact with stuff in the game?
+   Let's add in
