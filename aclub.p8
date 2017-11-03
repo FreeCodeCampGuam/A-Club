@@ -460,6 +460,31 @@ function __spark()
 	}add(_fireworks, s)
 end
 
+o__build_bridge = build_bridge
+if o__build_bridge then
+	function build_bridge()
+		
+	end
+else
+	function build_bridge()
+		cls()
+		print('error',64,24,14)
+		s = "build_bridge               "
+		k = "             doesn't exist!"
+		print(s,64,31,7)
+		print(k,64,31,6)
+		print("you have to create it!",64,38)
+		flip()
+		_init = nil
+		_update = nil
+		_draw = nil
+	end
+end
+
+function add_tile()
+
+end
+
 -- helpers
 
 function __next_lvl(lvlnum)
