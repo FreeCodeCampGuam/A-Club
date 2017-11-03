@@ -150,11 +150,11 @@ In games, we have characters running around doing stuff. Let's get a character o
 
 +++
 
-To see the characters we have drawn, click the second icon on the top-right  
+To see the characters we have drawn, click the second icon on the top-right 
 
 ![](assets/icon.png)
 
-This is the art screen, it should look like this
+You are now on the art screen, it should look like this
 
 ![](assets/editor.png)
 
@@ -163,11 +163,11 @@ This is the art screen, it should look like this
 
 Now, let's choose a character!
 
-Once you click one of them, you'll see the character number here
+Once you click one of them, you'll see the character number here:
 
 ![](assets/value.png)
 
-The number indicated is the one we need. In the image above, the number of the character is 1.
+The number indicated is the one we'll put in the code. In the image above, the number of the character is 1.
 
 +++
 
