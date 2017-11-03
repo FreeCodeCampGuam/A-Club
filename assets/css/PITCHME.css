@@ -2,8 +2,10 @@
    Font kit created with: https://www.fontsquirrel.com/tools/webfont-generator */
 @font-face {
     font-family: 'pico-8_mono_upperregular';
-    src: url('pico-8_mono_upper-webfont.woff2') format('woff2'),
-         url('pico-8_mono_upper-webfont.woff') format('woff');
+    src: local('PICO-8 Regular'), local('PICO-8 mono upper Regular'),
+         url('pico-8_mono_upper-webfont.woff2') format('woff2'),
+         url('pico-8_mono_upper-webfont.woff') format('woff'),
+         url('pico-8_mono_upper-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -14,7 +16,7 @@
 }
 
 .reveal code {
-	font-family: pico-8_mono_upperregular, PICO-8, monospace; 
+	font-family: 'pico-8_mono_upperregular', monospace; 
 	font-size: 0.6em;
 	background: #5F574F;
     padding: 0.5em 0.4em 0.5em 0.4em;
