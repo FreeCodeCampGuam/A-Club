@@ -431,6 +431,7 @@ function __draw_lpi()
 	end, 0)
 end
 
+-- override print for center
 oprint = print
 function print(s, x, y, c)
 	if(not y)return oprint(s)
