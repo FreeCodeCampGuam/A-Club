@@ -115,9 +115,7 @@ In games, we have characters running around doing stuff. Let's get a character o
 @[16](Choose a character and change the character variable with the corresponding number of your chosen character.)
 @[16](and we have a character!.. but wait... it doesn't move.)
 
----
-
-### Level 4
++++
 
 > **_Tip:_** Biba UOG!!
 
@@ -176,6 +174,6 @@ You can tell a **function** to do something. In this case, you call the function
 
 ---
 
-### Level 5
+### Level 4
 
 > **_Tip:_** My mama always said liveCoding's like a box of chocolates. You never know what you're gonna sound like.
