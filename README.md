@@ -1,4 +1,5 @@
 # A-Club PICO-8 Puzzle
+[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/FreeCodeCampGuam/A-Club?grs=github&t=white) 
 ### A PICO-8 Game
 
 #### The purpose of this game is to have a quick intro to 4 Core (Variables, Functions, Loops, and Conditionals) which will be used at the booth for A-club.

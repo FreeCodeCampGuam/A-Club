@@ -1,6 +1,21 @@
+/* Font source: https://www.lexaloffle.com/bbs/?tid=3760 
+   Font kit created with Transfonter (https://transfonter.org) */
 @font-face {
-	font-family: PICO-8;
-	src: url(assets/PICO-8_mono_upper.ttf);
+    font-family: 'PICO-8 mono upper';
+    src: url('PICO-8-mono-upper.eot');
+    src: url('PICO-8-mono-upper.eot?#iefix') format('embedded-opentype'),
+        url('PICO-8-mono-upper.woff2') format('woff2'),
+        url('PICO-8-mono-upper.woff') format('woff'),
+        url('PICO-8-mono-upper.ttf') format('truetype'),
+        url('PICO-8-mono-upper.svg#PICO-8-mono-upper') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: PICO-8; 
+  src: url(assets/PICO-8_mono_upper.ttf); 
 }
 
 .reveal strong, .reveal b {
@@ -8,7 +23,7 @@
 }
 
 .reveal code {
-	font-family: PICO-8, monospace; 
+	font-family: 'PICO-8 mono upper', PICO-8, monospace; 
 	font-size: 0.6em;
 	background: #5F574F;
     padding: 0.5em 0.4em 0.5em 0.4em;
