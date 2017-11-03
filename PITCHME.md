@@ -20,14 +20,13 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 
 @[4](At the top you should see this line)
 @[4](These are called **Comments**. Computers don't read those, they're there as notes for the programmer.)
-
 @[5](In most video games, code has three parts. Let's start with the first one which is **\_init()**)
 @[5-18](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
 @[23-38](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
 @[23-38](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂)
 @[]((Press right arrow key to go to the next slide.)) 
 
----
++++
 
 ### Level 1
 
