@@ -293,7 +293,8 @@ function game_init()
 	_fireworks = {}
 	
 	char = {x=64, y=64,
-							  dx=0, dy=0,}
+							  dx=0, dy=0,
+							  spd=3,acc=.3}
 end
 
 function game_update()
