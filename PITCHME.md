@@ -285,7 +285,7 @@ if ButtonIsPressed then
 end
 ```
 
-@[1-3](Copy the code above inside **\_update()** and replace `ButtonIsPressed` and `MoveCharacter` with the right functions and parameters. Use `btn()` and `move()`.
+@[1-3](Copy the code above inside **\_update()** and replace `ButtonIsPressed` and `MoveCharacter` with the right functions and parameters. Use `btn()` and `move()`.)
 @[1-3](Copy the code above inside **\_update()** again for the other three directions (up,down,left))
 
 +++
