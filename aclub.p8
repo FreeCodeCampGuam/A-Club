@@ -352,7 +352,7 @@ end
 
 -- lvls ---
 
--- level 4 --
+-- level 3 --
 left = ‹
 right = ‘
 function move(d)
