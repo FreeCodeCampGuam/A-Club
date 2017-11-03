@@ -299,6 +299,8 @@ function game_init()
 	_map_drawn = false
 	btn_checked = false
 	char_moved = false
+	pl_updated = false
+	pl_drawn = false
 end
 
 function game_update()
@@ -311,7 +313,8 @@ function game_update()
 	-- and begin intrinsic reward
 	-- as opposed to only lvl up reward
 	if character!=0 and _map_drawn and 
-				btn_checked and char_moved then
+				btn_checked and char_moved and 
+				pl_updated and pl_drawn then
 		__next_lvl(4)
 	end
 	p_update()
@@ -353,8 +356,9 @@ function move(d)
 	end
 end
 
-function update_player()
+function player_physics()
 	if(character==0)return
+	pl_updated = true
 
 	char.y += char.dy
 	if map_collide(char) then
@@ -373,8 +377,12 @@ function update_player()
 	char.dy += 1
 end
 
-function draw_player()
+px = "playerx"
+py = "playery"
+function draw_player(x, y)
 	if(character==0)return
+	if(x!="playerx" or y!="playery")return
+	pl_drawn = true
 	spr(character, char.x, char.y)
 end
 
