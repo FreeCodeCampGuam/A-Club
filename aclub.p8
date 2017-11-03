@@ -295,7 +295,7 @@ function game_init()
 	_fireworks = {}
 	
 	-- lvl3
-	char = {x=64, y=64,
+	char = {x=10, y=64,
 							  dx=0, dy=0,
 							  spd=3,acc=.7}
 	_map_drawn = false
