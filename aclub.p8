@@ -378,7 +378,7 @@ function move(d)
 	end
 end
 
-function player_physics()
+function update_physics()
 	floor_missing = __floor_missing
 
 	if(character==0)return
