@@ -19,10 +19,9 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 +++?code=aclub.p8&lang=lua
 
 @[4](At the top you should see this line)
+@[4](These are called comments. Computers don't read those, they're there as notes for the programmer.)
 
 +++
-
-These are called comments. Computers don't read those, they're there as notes for the programmer 
 
 +++code=aclub.p8&lang=lua
 
