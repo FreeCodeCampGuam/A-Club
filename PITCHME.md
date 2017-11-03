@@ -30,30 +30,15 @@ function _init()
 	title = "untitled"
 	t_color = 2
 end
+```
 
-
-function _update()
- 	t = t + .015  -- increase time
- 
- 	-- level 3
-
-end
-
-
-function _draw()
-	cls()  --clears the screen
-	print(title, 64, 48, t_color)
-	
-	-- level 3
-
-end
 ```
 @[1](At the top you should see this line)
 @[1](These are called **Comments**. Computers don't read those, they're there as notes for the programmer.)
-@[2-11](In most video games, code has three parts. Let's start with the first one which is **\_init()**)
+@[2-11](In most video games, code has three parts. Let's start with the first one which is **\_init()**. \_init() is always in tab 0)
 @[2-11](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
-@[14-30](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
-@[14-30](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂) 
+@[3](The other two parts are in tab 1 and tab 2. They don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
+@[3](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂) 
 
 +++
 
@@ -154,7 +139,7 @@ To see the characters we have drawn, click the second icon on the top-right
 
 ![](assets/icon.png)
 
-You are now on the art screen, it should look like this
+You are now on the art screen, it should look like this:
 
 ![](assets/editor.png)
 
@@ -185,30 +170,73 @@ end
 --game.
 ```
 
-@[6](Now, let's change the value of the character variable with the number of the character we chose.)
-@[6](Got it? Let's **reload** it using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see our changes.)
-@[6](and we have a character!.. but wait... it doesn't move.)
+@[6](Now, let's change the value of the character variable to the number of the character we chose.)
+@[6](Got it? Next, we need to draw your character on the screen!)
 
 +++
+
+To draw the character, you need to use **functions**.
+You can tell a function to do something. In this case, you call the function named `draw_player()` to draw your character on the screen.
+
++++
+
+```lua
+function _draw()
+	cls()  --clears the screen
+	print(title, 64, 48, t_color)
+	
+	-- level 3
+	-- draw map here
+	-- draw player here
+
+end
+```
+@[1-6](Since `draw_player()` draws your character on the screen, let's put it inside **\_draw()**. \_draw() is one of the three parts of the game loop we were talking about earlier. It is in tab 2.)
+@[7](Make sure to draw your player here using the `draw_player()` function.)
+@[7](All done? Let's reload our game using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see our character!)
+
++++
+
+Now, we need to have a place for our character to live in!
+
+We can make that using the `draw_map()` function.
+
+Since the `draw_map()` draws something, we also need to put it inside **\_draw()** which is on tab 2.
+
++++
+
+```lua
+function _draw()
+	cls()  --clears the screen
+	print(title, 64, 48, t_color)
+	
+	-- level 3
+end
+```
+@[]
+
 
 How do we make our character move? Well, we can by adding a *conditional*. This is where you could make your character *do something* if a condition is true.
 
 +++
 
 ```lua
---press ctrl+r to reload your
---game.
-
--->8
 function _update()
  t = t + .015  -- increase time
  
  -- level 3
  
-
+ 
+end
+-->8
+function _draw()
+	cls()  --clears the screen
+	print(title, 64, 48, t_color)
+	
+	-- level 3
 end
 ```
-@[5-11](Since this will be part of how your game works, we have to put it inside **\_update()**)
+
 @[5-11](This part of the code is part of the **Game Loop** that we talked about earlier that runs multiple times per second.)
 
 +++
@@ -247,10 +275,25 @@ end
 @[3](then we move!)
 @[3](Wait what does `move` do? And what is that inside the parenthesis?)
 @[3](`move` here is what you call a *function* and inside that parenthesis is a *parameter*.)
-@[3](You can tell a **function** to do something. In this case, you call the function to `move` and tell it to move `left`.)
+
 
 +++
 
 ### Level 4
 
 > **_Tip:_** My mama always said liveCoding's like a box of chocolates. You never know what you're gonna sound like.
+
++++
+
+Almost there! If you can get through that door, you win! 
+
+
+
+
+
+
+# want to go thru door
+# draw switch
+# conditional flip switch using z
+# turn on using z
+# write loop to cover the gap with a bridge
