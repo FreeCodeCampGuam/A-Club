@@ -30,7 +30,7 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 
 ### Level 1
 
-> **_Tip:_** to reload your game after making a change, use the keyboard shortcut Ctrl + R
+> **_Tip:_** to reload your game after making a change, use the keyboard shortcut <kbd>Ctrl</kbd> + <kbd>R</kbd>
 
 +++?code=aclub.p8&lang=lua
 
@@ -56,7 +56,7 @@ Let's change the `start` variable so we can start the game!
 
 Right now it's `false`, so change it to the opposite of `false`.
 
-Once you've done that, reload your game with Ctrl + R and see if it worked!
+Once you've done that, reload your game with <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if it worked!
 
 ---
 
