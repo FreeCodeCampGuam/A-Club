@@ -328,8 +328,46 @@ function game_draw()
 		_f.draw(_f)
 	end
 	__draw_lpi()
+end
+
+-- lvls ---
+
+-- level 4 --
+function move(d)
+	if(d==‹ or d=="left") then
+		char.dx = lerp(char.dx, -char.spd, char.acc)
+	end
+	if(d==‘ or d=="right") then
+		char.dx = lerp(char.dx, char.spd, char.acc)
+	end
+end
+
+function update_lvl4()	
+	char.y += char.dy
+	if map_collide(char) then
+		char.y -= char.dy
+		char.dy *= -.3
+	end
+	char.x += char.dx
+	if map_collide(char) then
+		char.x -= char.dx
+		char.dx *= -.3
+	end
+	
+	-- friction
+	char.dx *= .8
+	-- gravity
+	char.dy += 1
 	
 end
+
+function draw_lvl4()
+	map(0,0, 0,0, 16,16)
+	spr(character, char.x, char.y)
+end
+
+
+-- helpers
 
 function __next_lvl(lvlnum)
 	if(lvlnum == __lvl + 1)__lvl += 1
@@ -448,34 +486,14 @@ function all_colors_to(c)
  end
 end
 
--- level 4 --
-function move(d)
-	if(d==‹ or d=="left") then
-		char.dx -= 1
-	end
-	if(d==‘ or d=="right") then
-		char.dx += 1
-	end
-end
-
-function update_lvl4()	
-	char.y += char.dy
-	char.x += char.dx
-	char.x = mid(0,121,char.x)
-	
-		-- friction
-	char.dx *= .8
-	-- gravity
-	char.dy += 1
-	
-	if char.y > 108 then
-		char.dy = 0
-	end
-end
-
-function draw_lvl4()
-	map(0,0, 0,0, 16,16)
-	spr(character, char.x, char.y)
+-- assumes 8px and x,y is top left
+function map_collide(sp)
+	local cx = sp.x/8
+	local cy = sp.y/8
+	return fget(mget(cx,cy),0) or 
+								fget(mget(cx+1,cy),0) or
+								fget(mget(cx,cy+1),0) or
+								fget(mget(cx+1,cy+1),0)
 end
 __gfx__
 0000000000000000000000000000000000000000000000003b333b33000000009999499400000000999949949999499400000000000000000000000000000000
