@@ -305,13 +305,18 @@ function game_init()
 	pl_drawn = false
 
 	-- lvl4
-	__floor_missing = flr(2+rnd(4))
+	__frng = {2, 7}
+	__floor_missing = flr(__frng[1]+rnd(__frng[2]-__frng[1]+1))
 	floor_missing = __floor_missing
 
 	__btn_pressed = false
 	__btn_drawn = false
 	__btn = {x=-64,y=112,
 										hitt=0}
+
+	__built_bridge = false
+	__passed_tile_test = false
+	__num_tiles = 0
 
 	p_init()
 end
@@ -460,7 +465,23 @@ end
 o__build_bridge = build_bridge
 if o__build_bridge then
 	function build_bridge()
-		
+		-- after this runs,
+		-- _built_bridge == true
+		-- __passed_tile_test
+		-- __num_tiles for # of tiles for cur run
+		__built_bridge = true
+		__passed_tile_test = true
+		for __i=__frng[1], __frng[2] do
+			__num_tiles = 0
+			floor_missing = __i
+			o__build_bridge()
+			if __num_tiles!=floor_missing then
+				__passed_tile_test=false
+			end
+		end
+		floor_missing = __floor_missing
+		__num_tiles = 0
+		o__build_bridge()
 	end
 else
 	function build_bridge()
@@ -479,7 +500,7 @@ else
 end
 
 function add_tile()
-
+	__num_tiles += 1
 end
 
 -- helpers
