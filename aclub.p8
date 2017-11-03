@@ -378,7 +378,7 @@ function move(d)
 	end
 end
 
-function player_physics()
+function update_physics()
 	floor_missing = __floor_missing
 
 	if(character==0)return
@@ -401,11 +401,8 @@ function player_physics()
 	char.dy += 1
 end
 
-px = "playerx"
-py = "playery"
-function draw_player(x, y)
+function draw_player()
 	if(character==0)return
-	if(x!="playerx" or y!="playery")return
 	pl_drawn = true
 	spr(character, char.x, char.y)
 end
@@ -430,8 +427,6 @@ end
 -- level 4 --
 
 function draw_switch(x)
-	if(x==px)x=char.x
-	if(x==py)y=char.y
 	__btn_drawn = true
 	__btn.x = x
 	local sp = 38
