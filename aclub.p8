@@ -341,6 +341,11 @@ function game_update()
 	-- lvl 4
 	floor_missing = __floor_missing
 	__btn.hitt = max(0, __btn.hitt-1)
+	-- win
+	if(__passed_tile_test and __btn_pressed and
+				char.x > 124) then
+		__winner_winner_chicken_dinner()
+	end
 
 	p_update()
 
@@ -544,6 +549,25 @@ function draw_bridge()
 			mset(15,14,43)
 		else
 			mset(15,14,42)
+		end
+	end
+end
+
+function __winner_winner_chicken_dinner()
+	_update = function()
+		__t += 1
+		__fireworks()
+		p_update()
+
+		for _f in all(_fireworks) do
+			_f.update(_f)
+		end
+
+	end
+	_draw = function()
+		cls()
+		for _f in all(_fireworks) do
+			_f.draw(_f)
 		end
 	end
 end
