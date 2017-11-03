@@ -31,8 +31,6 @@ function _init()
 	t_color = 2
 end
 ```
-
-```
 @[1](At the top you should see this line)
 @[1](These are called **Comments**. Computers don't read those, they're there as notes for the programmer.)
 @[2-11](In most video games, code has three parts. Let's start with the first one which is **\_init()**. \_init() is always in tab 0)
@@ -191,7 +189,7 @@ function _draw()
 
 end
 ```
-@[1-6](Since `draw_player()` draws your character on the screen, let's put it inside **\_draw()**. \_draw() is one of the three parts of the game loop we were talking about earlier. It is in tab 2.)
+@[1-9](Since `draw_player()` draws your character on the screen, let's put it inside **\_draw()**. \_draw() is one of the three parts of the game loop we were talking about earlier. It is in tab 2.)
 @[7](Make sure to draw your player here using the `draw_player()` function.)
 @[7](All done? Let's reload our game using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see our character!)
 
@@ -222,7 +220,7 @@ end
 
 We have a problem, our character is just floating in the air. 
 
-That's because we haven't put physics into our game yet! We could use the `update_physics` function to do this.
+That's because we haven't put physics into our game yet. We could use the `update_physics` function to do this!
 
 
 +++
@@ -236,6 +234,7 @@ function _update()
 end
 ```
 @[1-7](Since we're *updating* the state of the game, we have to put `update_physics` inside **\_update()** which is on tab 1.)
+@[1-7](\_update() is one of the three parts of the game loop. We now know the three parts, **\_init()**, **\_update()**, and **\_draw()**)
 @[5](Make sure to update the physics here using the `update_physics()` function.)
 @[5](Got it? Let's reload our game using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see our character in motion!)
 
@@ -246,6 +245,16 @@ end
 +++
 
 Now, let's make our character move.
+
+To make our character move, we could use the `move()` function. 
+
+But! The computer has to know the direction we want our character to go. We can specify this as a *parameter* to our function like so:
+
+`move(right)`
+
++++
+
+However, we don't want to move right all the time, so we need to use a **conditional**.
 
 A basic conditional statement we could start with is the **if...then** How this works is kinda like...
 
@@ -264,18 +273,37 @@ If the **condition** is met, then the **action** happens.
 
 +++
 
-```lua
+We want our character to move right if we're pressing the right arrow button. We could use the btn() function for this like so:
 
-if btn(left) then
-	move(left)
+`btn(right)`
+
++++
+
+```lua
+if ButtonIsPressed then
+	MoveCharacter
 end
 ```
-@[1](To make our character move, we'll have to make a conditional that checks if a button is pressed.)
-@[2](If it is pressed,)
-@[3](then we move!)
-@[3](Wait what does `move` do? And what is that inside the parenthesis?)
-@[3](`move` here is what you call a *function* and inside that parenthesis is a *parameter*.)
 
+@[1-3](Copy the code above inside **\_update()** and replace `ButtonIsPressed` and `MoveCharacter` with the right functions and parameters. Use `btn()` and `move()`.)
+@[1-3](Copy the code above inside **\_update()** again for the other three directions (up,down,left))
+
++++
+
+```lua
+function _update()
+ t = t + .015  -- increase time
+ 
+ -- level 3
+ -- update physics here
+ --- put left conditional here
+ --- put right conditional here
+ --- put up conditional here
+ --- put down conditional here
+ 
+end
+```
+@[6-9](After you're done copying the conditionals here, reload the game using <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if you can make your character move using the arrow keys!)
 
 +++
 
