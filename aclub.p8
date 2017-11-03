@@ -436,13 +436,13 @@ z=4
 function hit_switch()
 	if(__box(char, __btn))__btn_pressed=true
 	if(__btn.hitt!=0)return
-	__btn.hitt = 4
+	__btn.hitt = 8
 	__spark()
 end
 
 function __spark()
 	local s = {
-		x=char.x+1,
+		x=char.x+2,
 		y=char.y,
 		t=0,
 		update=function(s)
