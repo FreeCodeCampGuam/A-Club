@@ -309,7 +309,8 @@ function game_init()
 
 	__btn_pressed = false
 	__btn_drawn = false
-	__btn = {x=-64,y=112}
+	__btn = {x=-64,y=112,
+										hitt=0}
 end
 
 function game_update()
@@ -329,6 +330,8 @@ function game_update()
 
 	-- lvl 4
 	floor_missing = __floor_missing
+	__btn.hitt = max(0, __btn.hitt-1)
+
 	p_update()
 
 	for _f in all(_fireworks) do
@@ -429,14 +432,17 @@ function draw_switch(x)
 	spr(sp, __btn.x-4, __btn.y)
 end
 
-function flip_switch()
-	__spark()
+z=4
+function hit_switch()
 	if(__box(char, __btn))__btn_pressed=true
+	if(__btn.hitt!=0)return
+	__btn.hitt = 8
+	__spark()
 end
 
 function __spark()
 	local s = {
-		x=char.x,
+		x=char.x+2,
 		y=char.y,
 		t=0,
 		update=function(s)
