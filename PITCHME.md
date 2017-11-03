@@ -52,8 +52,8 @@ end
 @[1](These are called **Comments**. Computers don't read those, they're there as notes for the programmer.)
 @[2-11](In most video games, code has three parts. Let's start with the first one which is **\_init()**)
 @[2-11](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
-@[15-30](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
-@[15-30](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂) 
+@[14-30](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
+@[14-30](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂) 
 
 +++
 
@@ -154,21 +154,20 @@ To see the list of characters available, click this icon on the upper-right corn
 
 ![](assets/charlist.png)
 
-You should see the following screen
+You should see the following screen after clicking the icon.
 
 ![](assets/editor.png)
 
 
 +++
 
-At the bottom are the characters you may use for your game. When you decide on your character, we will need to get its number or value. 
+Now, you need to get the number of the character you want. 
 
-We can get this near the middle of the screen:
+To do this, click on the character and then near the middle of the screen you should see its number like so
 
 ![](assets/value.png)
 
 The number indicated is the one we need. In the image above, the number of the character is 1.
-
 
 +++
 
