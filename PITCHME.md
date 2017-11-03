@@ -17,6 +17,7 @@ You should see this at the top  of your screen:
 If you don't see `-- i am a comment`, make sure the correct symbol and tab are selected like in the picture.
 
 +++
+
 ```lua
 -- i am a comment
 function _init()
@@ -63,6 +64,7 @@ end
 > **_Tip:_** to reload your game after making a change, use the keyboard shortcut <kbd>Ctrl</kbd> + <kbd>R</kbd>
 
 +++
+
 ```lua
 -- i am a comment
 function _init()
@@ -90,6 +92,7 @@ function _init()
 > **_Tip:_** want to make someone's day? Shout "REGINALD!"
 
 +++
+
 ```lua
 -- i am a comment
 function _init()
@@ -116,6 +119,7 @@ Oh wait, we forgot to change that ugly color!
 Variables can hold **strings** and **booleans**, but they can also hold **numbers**! Just like that `t` variable earlier.
 
 +++
+
 ```lua
 	-- level 1
 	start = false
@@ -147,6 +151,7 @@ Now that looks nice!
 In games, we have characters running around doing stuff. Let's get a character on to our game now too!
 
 +++
+
 ```lua
 	-- level 2
 	title = "untitled"
@@ -170,6 +175,7 @@ end
 How do we make our character move? Well, we can by adding a *conditional*. This is where you could make your character *do something* if a condition is true.
 
 +++
+
 ```lua
 --press ctrl+r to reload your
 --game.
