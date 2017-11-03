@@ -419,6 +419,7 @@ function draw_map()
 	floor_missing = __floor_missing
 	reload_map() -- to make sure they didn't change anything
 	map(0,0, 0,0, 16,16)
+	draw_bridge()
 end
 
 function reload_map()
@@ -429,6 +430,7 @@ function reload_map()
 			mset(i,15,5)
 		end
 	end
+	draw_bridge()
 end
 
 -- level 4 --
@@ -447,11 +449,7 @@ function hit_switch()
 		__btn_pressed=true
 		mset(15,12,24)
 		mset(15,13,11)
-		if __door_broke then
-			mset(15,14,43)
-		else
-			mset(15,14,27)			
-		end
+		mset(15,14,27)	-- let bridge break door
 	end
 	if(__btn.hitt!=0)return
 	__btn.hitt = 8
@@ -517,6 +515,37 @@ end
 
 function add_tile()
 	__num_tiles += 1
+end
+
+function draw_bridge()
+	if(not __built_bridge)return
+	local _start = 15-__floor_missing
+	for _i=_start, _start+__num_tiles-1 do
+		if __t/2+_i <= 24 then
+			if (__t/2+_i)%4<2 then
+				palt(0,false)
+				spr(37, _i*8, 120)
+				palt(0,true)
+				if _i==15 then
+					if __btn_pressed then
+						spr(43,_i*8,112)
+					else
+						spr(42,_i*8,112)
+					end
+				end
+			end
+		else
+			mset(_i,15,37)
+		end
+	end
+	if (__num_tiles>=__floor_missing and 
+				not __passed_tile_test) then
+		if __btn_pressed then
+			mset(15,14,43)
+		else
+			mset(15,14,42)
+		end
+	end
 end
 
 -- helpers
