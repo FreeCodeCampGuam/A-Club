@@ -494,7 +494,7 @@ if o__build_bridge then
 		__num_tiles = 0
 		o__build_bridge()
 
-		if __passed_tile_test and 
+		if not __passed_tile_test and 
 					__num_tiles >= __floor_missing then
 			__door_broke = true
 		end
