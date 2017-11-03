@@ -111,17 +111,10 @@ Now that looks nice!
 
 In games, we have characters running around doing stuff. Let's get a character on to our game now too!
 
-+++
++++?code=aclub.p8&lang=lua
 
-Choose a character and change the character variable with the corresponding number of your chosen character.
-
-```lua
-
-character = 01
-
-```
-
-and we have a character!.. but wait... it doesn't move.
+@[16](Choose a character and change the character variable with the corresponding number of your chosen character.)
+@[16](and we have a character!.. but wait... it doesn't move.)
 
 ---
 
@@ -133,19 +126,12 @@ and we have a character!.. but wait... it doesn't move.
 
 How do we make our character move? Well, we can by adding a *conditional*. This is where you could make your character *do something* if a condition is true.
 
-Since this will be part of how your game works, we have to put it inside:
++++?code=aclub.p8&lang=lua
 
-```lua
-
-function _update()
-
-end
-
-```
+@[24-30](Since this will be part of how your game works, we have to put it inside here.)
+@[24-30](This part of the code is part of the **Game Loop** that we talked about earlier that runs multiple times per second.)
 
 +++
-
-This part of the code is part of the **Game Loop** that we talked about earlier that runs multiple times per second.
 
 > **_Tip:_** The **Game Loop** in PICO-8 runs 30 times per second!
 
