@@ -135,11 +135,14 @@ The road ahead will be challenging and dangerous; take this guide with you!
     Ah right, `draw_player()` needs parameters too like our cool friend `move()` but this time it is structured like this `draw_player(px, py)`  
 
     You don't write in `px` and `py`, you replace them with where you want to place your player character when it's drawn! Refer to the cheatsheet for details on how to use PICO-8's coordinate plane (or have it on screen)
-    
 
 ***  
 
 * **Level 4**  
 
-   Hold on, what if you want to interact with stuff in the game?
-   Let's add in
+    Look! there's a door on the map!
+    You probably saw the switch in the sprite sheet, if not check it out!
+    We'll be using the switch to open the door. Let's spawn in that switch with `draw_switch(x)` and you guessed it, it'll have to go under the `_draw()` function (can show these with code-presenter easier)
+    Don't forget to fill in that parameter! That paremeter asks for where you want to put that swtich on, only between (1-15).
+
+    Great! Now we have a switch but we can't do anything with it now can we? Let's add in another conditional to look for when you press an action key, say <kbd>Z</kbd> same thing you did with `move()` but this time with `hit_switch()` (assuming they did the move conditionals already, show the "correct answer" for move as reference with code-presenter).
