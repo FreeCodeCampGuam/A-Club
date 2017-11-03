@@ -14,7 +14,7 @@
 }
 
 .reveal code {
-	font-family: pico-8_mono_upperregular, monospace; 
+	font-family: pico-8_mono_upperregular, PICO-8, monospace; 
 	font-size: 0.6em;
 	background: #5F574F;
     padding: 0.5em 0.4em 0.5em 0.4em;
