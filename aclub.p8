@@ -274,6 +274,8 @@ end
 -------------------------------
 
 
+cls()
+
 
 p_init = _init
 p_update = _update
