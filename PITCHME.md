@@ -21,7 +21,7 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[4](At the top you should see this line)
 @[4](These are called **Comments**. Computers don't read those, they're there as notes for the programmer.)
 
-@[5](In most video games, code has three parts. Let's start with the first one.)
+@[5](In most video games, code has three parts. Let's start with the first one which is **\_init()**)
 @[5-18](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
 @[23-38](The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
 @[23-38](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂)
@@ -37,11 +37,11 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 
 @[6](That's a **variable.**)
 @[6](It's just something that holds a value, like a box. What it holds can _vary_, hence vary..able!)
-@[6](Our game is using the `t` variable from the previous slide to track how much time has passed. We'll leave that alone for now.)
+@[6](Our game is using the `t` variable to track how much time has passed. We'll leave that alone for now.)
 @[9](Variables can also hold **booleans**.)
 @[9](A boolean is just something that is `true` or `false`.)
-@[9](The value of our `start` variable won't let our game start.)
-@[9](Right now it's `false`, so change it to the opposite of `false`.)
+@[9](The value of our `start` variable won't let our game begin.)
+@[9](Right now it's `false`, so change it to the opposite of false.)
 @[9](Once you've done that, reload your game with <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if it worked!)
 @[]((Press right arrow key to go to the next slide.))
 
@@ -53,18 +53,18 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 
 +++?code=aclub.p8&lang=lua
 
-@[](Awesome, looks like our game is working!)
-@[](Right now the title is just "untitled" and it's kind of an ugly color too 😕. Let's change that!)
-@[](Variables can also hold strings of letters and characters called ... **strings**! In PICO-8, strings are surrounded with quotation marks " ") 
+@[7](Awesome, looks like our game is working!)
+@[7](Right now the title is just "untitled" and it's kind of an ugly color too 😕. Let's change that!)
+@[7](Variables can also hold strings of letters and characters called ... **strings**! In PICO-8, strings are surrounded with quotation marks " ") 
 @[12](Look! In the code there's a variable named `title` with the string `"untitled"` in it.)
 @[12](Go ahead and change it to a *cooler* name.)
-@[]Got it? Let's `reload` our game to see it in all its glory!
+@[12](Got it? Let's reload our game using <kbd>Ctrl</kbd> + <kbd>R</kbd> to see it in all its glory!)
 
 +++
 
 Oh wait, we forgot to change that ugly color!
 
-Variables can holds **strings** and **booleans**, but they can also hold **numbers**! Just like that `t` variable earlier.
+Variables can hold **strings** and **booleans**, but they can also hold **numbers**! Just like that `t` variable earlier.
 
 +++?code=aclub.p8&lang=lua
 
