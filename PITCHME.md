@@ -22,9 +22,7 @@ If you don't see `-- i am a comment`, make sure the correct symbol and tab are s
 @[4](These are called comments. Computers don't read those, they're there as notes for the programmer.)
 
 @[5](In most video games, code has three parts. Let's start with the first one.)
-@[5-18](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.** 
-
-The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
+@[5-18](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.** The other two parts don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
 
 +++
 
