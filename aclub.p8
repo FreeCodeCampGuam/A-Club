@@ -303,11 +303,13 @@ function game_update()
 	if(title!="untitled" and t_color!=2)__next_lvl(3)
 	if(character!=0)__next_lvl(4)
 	p_update()
+
+	if(__lvl == 4)update_lvl4()
+
 	for _f in all(_fireworks) do
 		_f.update(_f)
 	end
 	__update_lpi()
-	if(__lvl == 4)update_lvl4()
 end
 
 function game_draw()
@@ -319,12 +321,14 @@ function game_draw()
 		print('press esc twice', 64, 48, 7)
 		print('and start making your game!', 64, 57, 7)
 	end
+
+	if(__lvl == 4)draw_lvl4()
+
 	for _f in all(_fireworks) do
 		_f.draw(_f)
 	end
 	__draw_lpi()
 	
-	if(__lvl == 4)draw_lvl4()
 end
 
 function __next_lvl(lvlnum)
