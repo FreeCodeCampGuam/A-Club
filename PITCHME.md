@@ -286,7 +286,7 @@ end
 ```
 
 @[1-3](Copy the code above inside **\_update()** and replace `ButtonIsPressed` and `MoveCharacter` with the right functions and parameters. Use `btn()` and `move()`.)
-@[1-3](Copy the code above inside **\_update()** again for the other three directions (up,down,left))
+@[1-3](Copy the code above inside **\_update()** again for the other direction(left))
 
 +++
 
@@ -296,11 +296,9 @@ function _update()
  
  -- level 3
  -- update physics here
- --- put left conditional here
- --- put right conditional here
- --- put up conditional here
- --- put down conditional here
- 
+ -- put left conditional here
+ -- put right conditional here
+
 end
 ```
 @[6-9](After you're done copying the conditionals here, reload the game using <kbd>Ctrl</kbd> + <kbd>R</kbd> and see if you can make your character move using the arrow keys!)
@@ -315,15 +313,149 @@ end
 
 Almost there! If you can get through that door, you win!
 
++++
 
+To open that door we will need to flip a switch. However, the switch is not on the screen so we have to draw it first.
 
++++
 
+To draw it, we have to use the `draw_switch(location)` function but we have to specify where to draw it first so we have to replace *location* with a number between *0 to 127*.
 
++++
 
+```lua
+function _draw()
+	cls()  --clears the screen
+	print(title, 64, 48, t_color)
+	
+	-- level 3
+	-- draw map here
+	-- draw player here
+	-- draw switch here
+end
+```
+@[1-9](Since `draw_switch(location)` draws something on the screen, we need to put it inside **\_draw()**.)
+@[8](Put your `draw_switch(location)` function here but make sure to replace *location* with a number from 0 to 127)
 
++++
 
-# want to go thru door
-# draw switch
-# conditional flip switch using z
-# turn on using z
-# write loop to cover the gap with a bridge
+Now, we need to setup a conditional that turns on the switch when we press the <kbd>z</kbd> key.
+
+It should look like the conditional we made earlier like so:
+
+```lua
+if (btn(Button)) then
+	hit_switch()
+end
+```
+@[1](Make sure to replace *Button* with the key we have to press to turn on the switch(in this case it's the <kbd>z</kbd> key.))
+
++++
+
+```lua
+function _update()
+ t = t + .015  -- increase time
+ 
+ -- level 3
+ -- update physics here
+ -- put left conditional here
+ -- put right conditional here
+ -- put flip switch conditional here
+end
+```
+@[1-11](Since we will be *updating* the switch, we need to put it inside **\_update()**.)
+@[9](Put your conditional here.)
+@[9](Let's reload the game using <kbd>Ctrl</kbd> + <kbd>R</kbd> and flip on the switch using the <kbd>Z</kbd> key!)
+
++++
+
+The door is now open, but there is a gap between the door and the bridge. To get to the door, we must cover the gap with blocks!
+
++++
+
+To do this we need to use the `build_bridge()` function. 
+
+However, this time you have to *make* the build_bridge() function.
+
++++
+
+Inside the build_bridge function we have to write a **loop**
+
+A loop repeats over and over again. We will use a loop because we have to draw a block *over and over again* depending on how many blocks are missing on the bridge.
+
++++
+
+A loop looks like this: 
+
+```lua
+  for i=1, 10 do
+        add_tile()
+  end
+```
+@[1](This loop repeats 10 times as you can see in the first line.)
+@[1](However, we need it to repeat depending on how many blocks there are.)
+@[1](To do this, we have to replace 10 with how many blocks are missing on the bridge.)
+@[1](There's a variable called `floor_missing` that contains the number of how many blocks are missing. You can use this variable instead of 10.)
+
++++
+
+```
+function build_bridge()
+	-- put your loop here
+end
+```
+@[1-3](This is how your `build_bridge()` will look like.)
+@[2](Make sure to put your loop here from the previous slide.)
+
++++
+
+```lua
+-- i am a comment
+function _init()
+	t = 0
+	
+	-- level 1
+	start = false
+
+	-- level 2
+	title = "untitled"
+	t_color = 2
+
+	-- level 3
+	character = 0
+	
+end
+
+-- put your build_bridge() function here
+
+```
+@[17](When you're done making your `build_bridge()` function, put it here.)
+
++++
+
+```lua
+-- i am a comment
+function _init()
+    t = 0
+    
+    -- level 1
+    start = true
+
+    -- level 2
+    title = "game"
+    t_color = 11
+    
+    -- level 3
+    character = 3
+    
+    -- level 4
+    -- call build_bridge() here
+    
+end
+```
+@[16](Now we've finished writing `build_bridge()`, we have to call it here.)
+@[16](When you're done, let's press <kbd>Ctrl</kbd> + <kbd>R</kbd> and watch our bridge come to form!)
+
++++
+
+This is the time we've been waiting for, go ahead and go through that door! :D
