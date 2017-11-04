@@ -554,9 +554,24 @@ function draw_bridge()
 end
 
 function __winner_winner_chicken_dinner()
+	__num_tiles+=1 -- plug in hole on right
+	draw_bridge()
+	char.x = 9
+	char.y = 118
+
 	_update = function()
 		__t += 1
-		__fireworks()
+		if(rnd(10) < 2)__fireworks()
+
+		-- jumping char
+		local dire = rnd(10) < 5 and left or right
+		if rnd(10) < 2 then 
+			move(dire)
+		end
+		if char.y >= 118.5 and rnd(10) < 1 then
+			char.dy -= 1
+		end
+
 		p_update()
 
 		for _f in all(_fireworks) do
@@ -565,10 +580,21 @@ function __winner_winner_chicken_dinner()
 
 	end
 	_draw = function()
-		cls()
+		cls(12)
+		draw_player()
 		for _f in all(_fireworks) do
-			_f.draw(_f)
+			draw_outline(_f.draw, 0, _f)
+			--_f.draw(_f)
 		end
+		for _i=0,15 do
+			spr(6, _i*8, 120)
+		end
+
+		function congrats()
+			s = 'congratulations!'
+			print(s, 64, 48 + sin(__t/15)*5, t_color)
+		end
+		draw_outline(congrats, 0)
 	end
 end
 
