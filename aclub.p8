@@ -660,7 +660,7 @@ function btn(d)
 end
 
 function __fireworks()
-	local amt=rnd(__lvl-1)+1
+	local amt=rnd(__lvl*3-1)+2
 	for i=1, amt do
 		local f = {
 			x=rnd(80)+24,
