@@ -557,7 +557,7 @@ function __winner_winner_chicken_dinner()
 	__num_tiles+=1 -- plug in hole on right
 	draw_bridge()
 	char.x = 9
-	char.y = 118
+	char.y = 108
 
 	_update = function()
 		__t += 1
@@ -568,8 +568,8 @@ function __winner_winner_chicken_dinner()
 		if rnd(10) < 2 then 
 			move(dire)
 		end
-		if char.y >= 118.5 and rnd(10) < 1 then
-			char.dy -= 1
+		if char.y >= 110 and rnd(10) < 1 then
+			char.dy -= 5
 		end
 
 		p_update()
