@@ -3,9 +3,9 @@
 
 +++
 
-You are tasked with making your own video game! |
-The road ahead will be challenging and dangerous. |
-Take this guide with you! |
+You are tasked with making your own video game!  
+<span class="fragment">The road ahead will be challenging and dangerous.</span>  
+<span class="fragment">Take this guide with you!</span>  
 
 +++
 
