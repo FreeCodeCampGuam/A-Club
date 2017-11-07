@@ -1,7 +1,11 @@
-### Instructions for your Game-Making Quest
+# **Welcome!**
+*Instructions for your Game-Making Quest*
 
-Welcome, you are tasked with making your own video game!
-The road ahead will be challenging and dangerous; take this guide with you!
++++
+
+You are tasked with making your own video game!  
+<span class="fragment">The road ahead will be challenging and dangerous.</span>  
+<span class="fragment">Take this guide with you!</span>  
 
 +++
 
@@ -13,7 +17,7 @@ To start making your game, you need to access the game editor. To do this, press
 +++
 
 You should see this at the top  of your screen: 
-![image](https://cdn.discordapp.com/attachments/225825116888498176/375579230420860928/unknown.png). 
+![image](https://cdn.discordapp.com/attachments/225825116888498176/375579230420860928/unknown.png)  
 If you don't see `-- i am a comment`, make sure the correct symbol and tab are selected like in the picture.
 
 +++
@@ -33,10 +37,10 @@ end
 ```
 @[1](At the top you should see this line)
 @[1](These are called **Comments**. Computers don't read those, they're there as notes for the programmer.)
-@[2-11](In most video games, code has three parts. Let's start with the first one which is **\_init()**. \_init() is always in tab 0)
-@[2-11](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
-@[3](The other two parts are in tab 1 and tab 2. They don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
-@[3](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂) 
+@[2, 11](In most video games, code has three parts. Let's start with the first one which is **`_init`**. We've put `_init` in tab 0)
+@[3-10](`_init` is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
+@[4](The other two parts are in tab 1 and tab 2. They don't just run once, they run over and over again in a loop! They make up what's called the **Game Loop.**)
+@[4](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂) 
 
 +++
 
