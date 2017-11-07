@@ -33,9 +33,9 @@ end
 ```
 @[1](At the top you should see this line)
 @[1](These are called **Comments**. Computers don't read those, they're there as notes for the programmer.)
-@[2-11](In most video games, code has three parts. Let's start with the first one which is **\_init()**. \_init() is always in tab 0)
-@[2-11](This is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
-@[3](The other two parts are in tab 1 and tab 2. They don't just run once, they run over and over again like a loop! They make up what's called the **Game Loop.**)
+@[2, 11](In most video games, code has three parts. Let's start with the first one which is **`_init`**. We've put `_init` in tab 0)
+@[3-10](`_init` is where you put settings for when the game starts for the first time. It only runs  **one time at the beginning of the game.**)
+@[3](The other two parts are in tab 1 and tab 2. They don't just run once, they run over and over again in a loop! They make up what's called the **Game Loop.**)
 @[3](Let's talk about that later, first we need to figure out how to start our game! We'll need to change the code a bit to do that.🙂) 
 
 +++
